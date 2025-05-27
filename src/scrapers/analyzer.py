@@ -4,43 +4,56 @@ import torch
 
 class TextAnalyzer:
     def __init__(self):
-        # Keywords tradicionais como fallback
+        # Keywords tradicionais como fallback - EXPANDIDOS
         self.destination_keywords = ['porto', 'galinhas', 'pernambuco', 'recife', 'nordeste', 'brasil']
         self.timing_keywords = ['época', 'quando', 'mês', 'temporada', 'período', 'clima']
         self.activity_keywords = ['mergulho', 'praia', 'passeio', 'turismo', 'viagem', 'hotel', 'pousada']
         self.price_keywords = ['preço', 'custo', 'valor', 'barato', 'caro', 'orçamento']
+        self.accommodation_keywords = ['hospedagem', 'hotéis', 'pousada', 'resort', 'hostel', 'acomodação']  # NOVO
         
         self.category_multipliers = {
             'destination': 2.0,
             'timing': 1.8,
             'activity': 1.5,
             'price': 1.7,
+            'accommodation': 1.6,  # NOVO
             'general': 1.0
         }
         
-        # Categorias para zero-shot classification
+        # Categorias MELHORADAS - mais distintas
         self.contextual_categories = [
-            "localização e destino turístico",
-            "tempo e sazonalidade de viagem", 
-            "atividades e experiências turísticas",
-            "preços e custos de viagem",
-            "sentimentos e opiniões sobre viagem",
-            "planejamento e logística de viagem",
-            "hospedagem e acomodação",
-            "gastronomia e restaurantes"
+            "destinos e lugares turísticos",
+            "datas e períodos de viagem", 
+            "atividades de lazer e turismo",
+            "valores monetários e preços",
+            "opiniões e avaliações",
+            "organização de viagens",
+            "hotéis e onde ficar",
+            "comida e restaurantes"
         ]
         
-        # Inicializar modelos
+        # Inicializar modelos - COM PORTUGUÊS
         try:
+            # Modelo de sentimento em português
             self.sentiment_pipeline = pipeline(
                 "sentiment-analysis",
-                model="cardiffnlp/twitter-roberta-base-sentiment-latest",
+                model="neuralmind/bert-base-portuguese-cased",
                 device=0 if torch.cuda.is_available() else -1
             )
-            print("Modelo de sentimento carregado!")
+            print("✅ Modelo de sentimento em português carregado!")
         except Exception as e:
-            print(f"Erro no modelo de sentimento: {e}")
-            self.sentiment_pipeline = None
+            print(f"❌ Erro no modelo de sentimento: {e}")
+            print("🔄 Tentando modelo alternativo...")
+            try:
+                self.sentiment_pipeline = pipeline(
+                    "sentiment-analysis",
+                    model="cardiffnlp/twitter-roberta-base-sentiment-latest",
+                    device=0 if torch.cuda.is_available() else -1
+                )
+                print("✅ Modelo de sentimento alternativo carregado!")
+            except Exception as e2:
+                print(f"❌ Erro no modelo alternativo: {e2}")
+                self.sentiment_pipeline = None
 
         try:
             self.classifier_pipeline = pipeline(
@@ -48,39 +61,39 @@ class TextAnalyzer:
                 model="facebook/bart-large-mnli",
                 device=0 if torch.cuda.is_available() else -1
             )
-            print("Modelo de classificação carregado!")
+            print("✅ Modelo de classificação carregado!")
         except Exception as e:
-            print(f"Erro no modelo de classificação: {e}")
+            print(f"❌ Erro no modelo de classificação: {e}")
             self.classifier_pipeline = None
 
     def categorize_keyword_contextual(self, term, context_text=""):
-        """Categoriza usando contexto real em vez de palavras-chave fixas"""
+        """Categoriza usando contexto NEUTRO e categorias DISTINTAS"""
         
         if not self.classifier_pipeline:
             return self.categorize_keyword_fallback(term)
         
-        # Criar texto de contexto para análise
-        analysis_text = f"Esta palavra ou frase '{term}' no contexto: {context_text[:200]}"
+        # CONTEXTO MELHORADO - neutro + expandido
+        analysis_text = f"Esta palavra ou frase '{term}' em contexto de viagem se refere a: {context_text[:500]}"
         
         try:
             result = self.classifier_pipeline(analysis_text, self.contextual_categories)
             
-            # Mapear categorias detalhadas para simplificadas
+            # MAPEAMENTO MELHORADO - categorias mais distintas
             category_mapping = {
-                "localização e destino turístico": "destination",
-                "tempo e sazonalidade de viagem": "timing", 
-                "atividades e experiências turísticas": "activity",
-                "preços e custos de viagem": "price",
-                "sentimentos e opiniões sobre viagem": "sentiment",
-                "planejamento e logística de viagem": "planning",
-                "hospedagem e acomodação": "accommodation",
-                "gastronomia e restaurantes": "food"
+                "destinos e lugares turísticos": "destination",
+                "datas e períodos de viagem": "timing", 
+                "atividades de lazer e turismo": "activity",
+                "valores monetários e preços": "price",
+                "opiniões e avaliações": "sentiment",
+                "organização de viagens": "planning",
+                "hotéis e onde ficar": "accommodation",
+                "comida e restaurantes": "food"
             }
             
             best_category = result['labels'][0]
             confidence = result['scores'][0]
             
-            # Só usa classificação contextual se confiança > 0.5
+            # THRESHOLD AJUSTADO para maior precisão
             if confidence > 0.5:
                 simple_category = category_mapping.get(best_category, "general")
                 return {
@@ -97,7 +110,7 @@ class TextAnalyzer:
             return self.categorize_keyword_fallback(term)
 
     def categorize_keyword_fallback(self, term):
-        """Método fallback usando palavras-chave"""
+        """Método fallback EXPANDIDO com acomodação"""
         if any(keyword in term.lower() for keyword in self.destination_keywords):
             category = 'destination'
         elif any(keyword in term.lower() for keyword in self.timing_keywords):
@@ -106,6 +119,8 @@ class TextAnalyzer:
             category = 'activity'
         elif any(keyword in term.lower() for keyword in self.price_keywords):
             category = 'price'
+        elif any(keyword in term.lower() for keyword in self.accommodation_keywords):  # NOVO
+            category = 'accommodation'
         else:
             category = 'general'
             
@@ -125,29 +140,31 @@ class TextAnalyzer:
         if not self.sentiment_pipeline:
             return self.calculate_sentiment_fallback(text)
         
-        max_length = 500
+        # CHUNKS MENORES para BERT português
+        max_length = 400  
         text_chunks = [text[i:i+max_length] for i in range(0, len(text), max_length)]
         
         chunk_sentiments = []
         
         for chunk in text_chunks:
-            if len(chunk.strip()) < 10:  
+            if len(chunk.strip()) < 20:  # Aumentar mínimo para português
                 continue
                 
             try:
                 result = self.sentiment_pipeline(chunk)
                 
-                if result[0]['label'] == 'LABEL_2':  # Positive
+                # MAPEAMENTO ROBUSTO para diferentes modelos
+                if 'POSITIVE' in result[0]['label'].upper() or 'LABEL_2' in result[0]['label']:
                     score = result[0]['score']
-                elif result[0]['label'] == 'LABEL_0':  # Negative  
+                elif 'NEGATIVE' in result[0]['label'].upper() or 'LABEL_0' in result[0]['label']:
                     score = 1 - result[0]['score']
-                else:  # Neutral (LABEL_1)
+                else:  # Neutral
                     score = 0.5
                 
                 chunk_sentiments.append(score)
                 
             except Exception as e:
-                print(f"Erro na análise de sentimento: {e}")
+                print(f"Erro na análise de sentimento chunk: {e}")
                 continue
         
         if not chunk_sentiments:
@@ -163,8 +180,9 @@ class TextAnalyzer:
         }
 
     def calculate_sentiment_fallback(self, text):
-        positive_words = ['melhor', 'bom', 'boa', 'excelente', 'incrível', 'lindo', 'maravilhoso']
-        negative_words = ['ruim', 'péssimo', 'caro', 'problema', 'difícil', 'complicado']
+        # PALAVRAS EXPANDIDAS
+        positive_words = ['melhor', 'bom', 'boa', 'excelente', 'incrível', 'lindo', 'maravilhoso', 'ótimo', 'perfeito']
+        negative_words = ['ruim', 'péssimo', 'caro', 'problema', 'difícil', 'complicado', 'terrível', 'horrível']
         
         positive_count = sum(text.lower().count(word) for word in positive_words)
         negative_count = sum(text.lower().count(word) for word in negative_words)
@@ -192,7 +210,7 @@ class TextAnalyzer:
         return round(min(relevance_score, 10.0), 2)
 
     def analyze_ngrams(self, filtered_words, total_relevant_words, original_text=""):
-        """Análise com contexto para melhor categorização"""
+        """Análise com CONTEXTO EXPANDIDO para melhor categorização"""
         unigrams = Counter(filtered_words)
         
         bigrams = []
@@ -209,7 +227,7 @@ class TextAnalyzer:
         
         all_terms = []
         
-        # Unigrams com contexto
+        # Unigrams com contexto EXPANDIDO
         for term, freq in unigrams.most_common(30):
             category_info = self.categorize_keyword_contextual(term, original_text)
             relevance_score = self.calculate_relevance_score(term, freq, total_relevant_words, category_info['category'])
@@ -225,7 +243,7 @@ class TextAnalyzer:
                 'classification_method': category_info['method']
             })
         
-        # Bigrams com contexto
+        # Bigrams com contexto EXPANDIDO
         for term, freq in bigrams_count.most_common(20):
             category_info = self.categorize_keyword_contextual(term, original_text)
             relevance_score = self.calculate_relevance_score(term, freq, total_relevant_words, category_info['category'])
@@ -241,7 +259,7 @@ class TextAnalyzer:
                 'classification_method': category_info['method']
             })
         
-        # Trigrams com contexto
+        # Trigrams com contexto EXPANDIDO
         for term, freq in trigrams_count.most_common(15):
             category_info = self.categorize_keyword_contextual(term, original_text)
             relevance_score = self.calculate_relevance_score(term, freq, total_relevant_words, category_info['category'])
@@ -267,7 +285,7 @@ class TextAnalyzer:
             'price_terms': [],
             'sentiment_terms': [],
             'planning_terms': [],
-            'accommodation_terms': [],
+            'accommodation_terms': [],  # NOVO
             'food_terms': [],
             'general_terms': []
         }

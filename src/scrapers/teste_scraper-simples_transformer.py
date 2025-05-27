@@ -68,34 +68,34 @@ class TextAnalyzer:
             self.classifier_pipeline = None
 
     def categorize_keyword_contextual(self, term, context_text=""):
-        """Categoriza usando contexto real em vez de palavras-chave fixas"""
+        """Categoriza usando contexto neutro e categorias mais distintas"""
         
         if not self.classifier_pipeline:
             return self.categorize_keyword_fallback(term)
         
-        # Aumentar contexto e traduzir para melhor análise
-        analysis_text = f"No contexto de turismo em Porto de Galinhas, a palavra ou frase '{term}' se refere a: {context_text[:400]}"
+        # Contexto mais neutro, sem viés para destino
+        analysis_text = f"Esta palavra ou frase '{term}' em contexto de viagem se refere a: {context_text[:500]}"
         
         try:
             result = self.classifier_pipeline(analysis_text, self.contextual_categories)
             
-            # Mapear categorias detalhadas para simplificadas
+            # Mapear categorias mais distintas para simplificadas
             category_mapping = {
-                "localização e destino turístico": "destination",
-                "tempo e sazonalidade de viagem": "timing", 
-                "atividades e experiências turísticas": "activity",
-                "preços e custos de viagem": "price",
-                "sentimentos e opiniões sobre viagem": "sentiment",
-                "planejamento e logística de viagem": "planning",
-                "hospedagem e acomodação": "accommodation",
-                "gastronomia e restaurantes": "food"
+                "destinos e lugares turísticos": "destination",
+                "datas e períodos de viagem": "timing", 
+                "atividades de lazer e turismo": "activity",
+                "valores monetários e preços": "price",
+                "opiniões e avaliações": "sentiment",
+                "organização de viagens": "planning",
+                "hotéis e onde ficar": "accommodation",
+                "comida e restaurantes": "food"
             }
             
             best_category = result['labels'][0]
             confidence = result['scores'][0]
             
-            # Reduzir threshold para aceitar mais classificações contextuais
-            if confidence > 0.4:  # Era 0.5, agora 0.4
+            # Aumentar threshold para ser mais seletivo
+            if confidence > 0.5:  # Voltou para 0.5 para maior precisão
                 simple_category = category_mapping.get(best_category, "general")
                 return {
                     'category': simple_category,
@@ -290,3 +290,113 @@ class TextAnalyzer:
             keyword_insights[f'{category}_terms'].append(term_data)
         
         return keyword_insights
+
+def test_single_site_with_transformers():
+    # URL de teste
+    url = "https://www.viagensmontreal.com/blog/quando-ir-a-porto-de-galinhas-descubra-a-melhor-epoca/"
+    
+    print("🚀 Testando Scraper com Transformers...")
+    print(f"URL: {url}\n")
+    
+    # 1. Extrair conteúdo
+    print("📥 Extraindo conteúdo...")
+    import requests
+    from bs4 import BeautifulSoup
+    import re
+    import nltk
+    
+    nltk.download('stopwords', quiet=True)
+    
+    response = requests.get(url)
+    soup = BeautifulSoup(response.content, 'html.parser')
+    
+    for script in soup(["script", "style"]):
+        script.extract()
+    
+    text = soup.get_text()
+    original_text = re.sub(r'\s+', ' ', text).strip()
+    print(f"✅ Texto extraído: {len(original_text)} caracteres\n")
+    
+    # 2. Inicializar analyzer com transformers
+    print("🤖 Carregando modelos transformers...")
+    analyzer = TextAnalyzer()
+    print("✅ Modelos carregados!\n")
+    
+    # 3. Análise de Sentimento com Transformer
+    print("💭 Analisando sentimento com transformer...")
+    sentiment_result = analyzer.analyze_sentiment_transformer(original_text)
+    
+    print("📊 RESULTADO DO SENTIMENTO:")
+    print(f"  Score Geral: {sentiment_result['overall_sentiment']}")
+    print(f"  Confiança: {sentiment_result['sentiment_confidence']}")
+    print(f"  Chunks Analisados: {sentiment_result['chunks_analyzed']}")
+    print(f"  Método: {sentiment_result['method']}\n")
+    
+    # 4. Preparar texto para análise de palavras
+    print("🔤 Processando texto para análise de palavras...")
+    
+    stop_words = set(nltk.corpus.stopwords.words('portuguese'))
+    stop_words.update(['que', 'para', 'com', 'uma', 'mais', 'muito', 'pode', 'ser', 'tem', 'vai', 'seu', 'sua'])
+    
+    clean_text = re.sub(r'[^\w\s]', ' ', original_text.lower())
+    words = [word for word in clean_text.split() if len(word) > 2]
+    filtered_words = [word for word in words if word not in stop_words]
+    
+    print(f"✅ {len(filtered_words)} palavras filtradas\n")
+    
+    # 5. Análise de N-gramas com categorização contextual
+    print("🏷️ Categorizando termos com transformer...")
+    
+    all_terms, unigrams = analyzer.analyze_ngrams(filtered_words, len(filtered_words), original_text)
+    
+    print("📈 TOP 10 TERMOS COM CATEGORIZAÇÃO CONTEXTUAL:")
+    
+    for i, term in enumerate(all_terms[:10], 1):
+        print(f"  {i}. '{term['term']}' ({term['type']})")
+        print(f"     Categoria: {term['category']} -> {term['detailed_category']}")
+        print(f"     Frequência: {term['frequency']} | Score: {term['relevance_score']}")
+        print(f"     Confiança: {term['classification_confidence']} | Método: {term['classification_method']}")
+        print()
+    
+    # 6. Categorizar termos
+    print("📂 Organizando por categorias...")
+    categorized = analyzer.categorize_terms(all_terms)
+    
+    print("📋 RESUMO POR CATEGORIA:")
+    for category, terms in categorized.items():
+        if terms:
+            print(f"  {category.upper()}: {len(terms)} termos")
+            # Mostrar os 3 mais relevantes de cada categoria
+            top_terms = sorted(terms, key=lambda x: x['relevance_score'], reverse=True)[:3]
+            for term in top_terms:
+                print(f"    - {term['term']} (score: {term['relevance_score']})")
+    
+    print("\n" + "="*60)
+    
+    # 7. Comparação: Método antigo vs novo
+    print("🔍 COMPARAÇÃO: Keyword vs Contextual")
+    
+    sample_terms = ["hospedagem", "hotéis", "melhor época", "pernambuco"]
+    
+    for term in sample_terms:
+        matching_terms = [t for t in all_terms if term in t['term']]
+        if matching_terms:
+            term_data = matching_terms[0]
+            
+            # Método antigo (fallback)
+            old_result = analyzer.categorize_keyword_fallback(term)
+            
+            print(f"\nTermo: '{term_data['term']}'")
+            print(f"  Método Antigo: {old_result['category']}")
+            print(f"  Método Novo: {term_data['category']} -> {term_data['detailed_category']}")
+            print(f"  Confiança: {term_data['classification_confidence']}")
+    
+    print("\n" + "="*60)
+    print("🎯 CONCLUSÃO:")
+    print(f"✅ Sentimento geral do site: {sentiment_result['overall_sentiment']:.2f} ({'Positivo' if sentiment_result['overall_sentiment'] > 0.6 else 'Neutro' if sentiment_result['overall_sentiment'] > 0.4 else 'Negativo'})")
+    print(f"✅ {len(all_terms)} termos categorizados automaticamente")
+    print(f"✅ {len([t for t in all_terms if t['classification_method'] == 'contextual'])} termos categorizados com IA")
+    print(f"✅ {len([t for t in all_terms if t['classification_method'] == 'keyword'])} termos categorizados com fallback")
+
+if __name__ == "__main__":
+    test_single_site_with_transformers()
