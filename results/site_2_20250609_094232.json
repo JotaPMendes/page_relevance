@@ -1,0 +1,863 @@
+{
+  "site_info": {
+    "name": "Viajante Curioso - Porto de Galinhas",
+    "url": "https://viajantecurioso.com.br/pernambuco/nao-gostei-porto-galinhas-pernambuco/",
+    "content_length": 161261,
+    "relevant_words": 14733
+  },
+  "sentiment_analysis": {
+    "overall_sentiment": 0.5,
+    "sentiment_confidence": 0.5,
+    "chunks_analyzed": 404,
+    "method": "transformer"
+  },
+  "top_terms": [
+    {
+      "term": "porto",
+      "type": "unigram",
+      "frequency": 325,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.562,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "galinhas",
+      "type": "unigram",
+      "frequency": 247,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.591,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "praia",
+      "type": "unigram",
+      "frequency": 170,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.605,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "tudo",
+      "type": "unigram",
+      "frequency": 105,
+      "relevance_score": 7.13,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "bem",
+      "type": "unigram",
+      "frequency": 96,
+      "relevance_score": 6.52,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.526,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "praias",
+      "type": "unigram",
+      "frequency": 89,
+      "relevance_score": 6.04,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.58,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "obrigado",
+      "type": "unigram",
+      "frequency": 82,
+      "relevance_score": 5.57,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.575,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "lugar",
+      "type": "unigram",
+      "frequency": 80,
+      "relevance_score": 5.43,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.589,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "vendedores",
+      "type": "unigram",
+      "frequency": 77,
+      "relevance_score": 5.23,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "turismo",
+      "type": "unigram",
+      "frequency": 75,
+      "relevance_score": 7.64,
+      "category": "activity",
+      "detailed_category": "activity",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "aqui",
+      "type": "unigram",
+      "frequency": 70,
+      "relevance_score": 4.75,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.518,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "responderolá",
+      "type": "unigram",
+      "frequency": 68,
+      "relevance_score": 4.62,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.574,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "cidade",
+      "type": "unigram",
+      "frequency": 67,
+      "relevance_score": 4.55,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.532,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "pois",
+      "type": "unigram",
+      "frequency": 67,
+      "relevance_score": 4.55,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.519,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "brasil",
+      "type": "unigram",
+      "frequency": 61,
+      "relevance_score": 4.14,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.524,
+      "classification_method": "contextual"
+    }
+  ],
+  "categorized_terms": {
+    "destination_terms": [],
+    "timing_terms": [],
+    "activity_terms": [
+      {
+        "term": "turismo",
+        "type": "unigram",
+        "frequency": 75,
+        "relevance_score": 7.64,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "turismo sustentável",
+        "type": "bigram",
+        "frequency": 11,
+        "relevance_score": 1.12,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      }
+    ],
+    "price_terms": [],
+    "sentiment_terms": [],
+    "planning_terms": [
+      {
+        "term": "porto",
+        "type": "unigram",
+        "frequency": 325,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.562,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "galinhas",
+        "type": "unigram",
+        "frequency": 247,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.591,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "praia",
+        "type": "unigram",
+        "frequency": 170,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.605,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "bem",
+        "type": "unigram",
+        "frequency": 96,
+        "relevance_score": 6.52,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.526,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "praias",
+        "type": "unigram",
+        "frequency": 89,
+        "relevance_score": 6.04,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.58,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "obrigado",
+        "type": "unigram",
+        "frequency": 82,
+        "relevance_score": 5.57,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.575,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "lugar",
+        "type": "unigram",
+        "frequency": 80,
+        "relevance_score": 5.43,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.589,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "aqui",
+        "type": "unigram",
+        "frequency": 70,
+        "relevance_score": 4.75,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.518,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "responderolá",
+        "type": "unigram",
+        "frequency": 68,
+        "relevance_score": 4.62,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.574,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "cidade",
+        "type": "unigram",
+        "frequency": 67,
+        "relevance_score": 4.55,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.532,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "pois",
+        "type": "unigram",
+        "frequency": 67,
+        "relevance_score": 4.55,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.519,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "brasil",
+        "type": "unigram",
+        "frequency": 61,
+        "relevance_score": 4.14,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.524,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "pra",
+        "type": "unigram",
+        "frequency": 61,
+        "relevance_score": 4.14,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.598,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "blog",
+        "type": "unigram",
+        "frequency": 58,
+        "relevance_score": 3.94,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.555,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "ter",
+        "type": "unigram",
+        "frequency": 50,
+        "relevance_score": 3.39,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.55,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "vila",
+        "type": "unigram",
+        "frequency": 48,
+        "relevance_score": 3.26,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.546,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "responderoi",
+        "type": "unigram",
+        "frequency": 48,
+        "relevance_score": 3.26,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.553,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "todo",
+        "type": "unigram",
+        "frequency": 46,
+        "relevance_score": 3.12,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.513,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "sim",
+        "type": "unigram",
+        "frequency": 46,
+        "relevance_score": 3.12,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.572,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "estrutura",
+        "type": "unigram",
+        "frequency": 46,
+        "relevance_score": 3.12,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.551,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "melhor",
+        "type": "unigram",
+        "frequency": 46,
+        "relevance_score": 3.12,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.522,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "mar",
+        "type": "unigram",
+        "frequency": 45,
+        "relevance_score": 3.05,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.566,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "porto galinhas",
+        "type": "bigram",
+        "frequency": 243,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.609,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "tudo bem",
+        "type": "bigram",
+        "frequency": 51,
+        "relevance_score": 3.46,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.502,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "muro alto",
+        "type": "bigram",
+        "frequency": 30,
+        "relevance_score": 2.04,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.531,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "obrigado escrever",
+        "type": "bigram",
+        "frequency": 17,
+        "relevance_score": 1.15,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.551,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "praia porto",
+        "type": "bigram",
+        "frequency": 16,
+        "relevance_score": 1.09,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.593,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "obrigado comentários",
+        "type": "bigram",
+        "frequency": 16,
+        "relevance_score": 1.09,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.503,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "aqui blog",
+        "type": "bigram",
+        "frequency": 15,
+        "relevance_score": 1.02,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.566,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "obrigado dividir",
+        "type": "bigram",
+        "frequency": 15,
+        "relevance_score": 1.02,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.534,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "poder público",
+        "type": "bigram",
+        "frequency": 14,
+        "relevance_score": 0.95,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.557,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "escrever aqui",
+        "type": "bigram",
+        "frequency": 14,
+        "relevance_score": 0.95,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.541,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "ponto vista",
+        "type": "bigram",
+        "frequency": 12,
+        "relevance_score": 0.81,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.518,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "bem obrigado",
+        "type": "bigram",
+        "frequency": 12,
+        "relevance_score": 0.81,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.514,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "pretendo voltar",
+        "type": "bigram",
+        "frequency": 12,
+        "relevance_score": 0.81,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.531,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "outras praias",
+        "type": "bigram",
+        "frequency": 10,
+        "relevance_score": 0.68,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.575,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "guarda sol",
+        "type": "bigram",
+        "frequency": 10,
+        "relevance_score": 0.68,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.523,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "obrigado escrever aqui",
+        "type": "trigram",
+        "frequency": 13,
+        "relevance_score": 0.88,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.644,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "praia porto galinhas",
+        "type": "trigram",
+        "frequency": 12,
+        "relevance_score": 0.81,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.674,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "tudo bem obrigado",
+        "type": "trigram",
+        "frequency": 12,
+        "relevance_score": 0.81,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.523,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "escrever aqui blog",
+        "type": "trigram",
+        "frequency": 12,
+        "relevance_score": 0.81,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.551,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "porto galinhas praia",
+        "type": "trigram",
+        "frequency": 7,
+        "relevance_score": 0.48,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.626,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "obrigado leitura comentários",
+        "type": "trigram",
+        "frequency": 5,
+        "relevance_score": 0.34,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.532,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "paraíso porto galinhas",
+        "type": "trigram",
+        "frequency": 5,
+        "relevance_score": 0.34,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.635,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "porém porto galinhas",
+        "type": "trigram",
+        "frequency": 4,
+        "relevance_score": 0.27,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.657,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "porto galinhas senti",
+        "type": "trigram",
+        "frequency": 4,
+        "relevance_score": 0.27,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.607,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "voltaria porto galinhas",
+        "type": "trigram",
+        "frequency": 4,
+        "relevance_score": 0.27,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.637,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "quanto porto galinhas",
+        "type": "trigram",
+        "frequency": 4,
+        "relevance_score": 0.27,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.617,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "nunca porto galinhas",
+        "type": "trigram",
+        "frequency": 4,
+        "relevance_score": 0.27,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.528,
+        "classification_method": "contextual"
+      }
+    ],
+    "accommodation_terms": [],
+    "food_terms": [],
+    "general_terms": [
+      {
+        "term": "tudo",
+        "type": "unigram",
+        "frequency": 105,
+        "relevance_score": 7.13,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "vendedores",
+        "type": "unigram",
+        "frequency": 77,
+        "relevance_score": 5.23,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "comentários",
+        "type": "unigram",
+        "frequency": 58,
+        "relevance_score": 3.94,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "todos",
+        "type": "unigram",
+        "frequency": 56,
+        "relevance_score": 3.8,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "turistas",
+        "type": "unigram",
+        "frequency": 52,
+        "relevance_score": 3.53,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "natureza",
+        "type": "unigram",
+        "frequency": 46,
+        "relevance_score": 3.12,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "pessoas",
+        "type": "unigram",
+        "frequency": 45,
+        "relevance_score": 3.05,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "piscinas naturais",
+        "type": "bigram",
+        "frequency": 19,
+        "relevance_score": 1.29,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "assédio vendedores",
+        "type": "bigram",
+        "frequency": 19,
+        "relevance_score": 1.29,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "faixa areia",
+        "type": "bigram",
+        "frequency": 11,
+        "relevance_score": 0.75,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "ganhar dinheiro",
+        "type": "bigram",
+        "frequency": 9,
+        "relevance_score": 0.61,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "dividir opiniões blog",
+        "type": "trigram",
+        "frequency": 5,
+        "relevance_score": 0.34,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "projeto manejo turístico",
+        "type": "trigram",
+        "frequency": 5,
+        "relevance_score": 0.34,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "obrigado dividir opiniões",
+        "type": "trigram",
+        "frequency": 4,
+        "relevance_score": 0.27,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      }
+    ]
+  },
+  "category_summary": {
+    "activity_terms": {
+      "total_terms": 2,
+      "avg_relevance_score": 4.38,
+      "top_terms": [
+        "turismo",
+        "turismo sustentável"
+      ]
+    },
+    "planning_terms": {
+      "total_terms": 49,
+      "avg_relevance_score": 2.9,
+      "top_terms": [
+        "porto",
+        "galinhas",
+        "praia"
+      ]
+    },
+    "general_terms": {
+      "total_terms": 14,
+      "avg_relevance_score": 2.48,
+      "top_terms": [
+        "tudo",
+        "vendedores",
+        "comentários"
+      ]
+    }
+  },
+  "ai_usage": {
+    "total_terms": 65,
+    "contextual_classifications": 49,
+    "keyword_fallbacks": 16
+  }
+}

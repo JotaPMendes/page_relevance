@@ -1,0 +1,874 @@
+{
+  "site_info": {
+    "name": "Melhores Destinos - Restaurantes",
+    "url": "https://guia.melhoresdestinos.com.br/onde-comer-em-porto-de-galinhas-restaurantes.html",
+    "content_length": 3804,
+    "relevant_words": 370
+  },
+  "sentiment_analysis": {
+    "overall_sentiment": 0.496,
+    "sentiment_confidence": 0.496,
+    "chunks_analyzed": 10,
+    "method": "transformer"
+  },
+  "top_terms": [
+    {
+      "term": "porto",
+      "type": "unigram",
+      "frequency": 15,
+      "relevance_score": 10.0,
+      "category": "destination",
+      "detailed_category": "destination",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "galinhas",
+      "type": "unigram",
+      "frequency": 15,
+      "relevance_score": 10.0,
+      "category": "destination",
+      "detailed_category": "destination",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "comer",
+      "type": "unigram",
+      "frequency": 11,
+      "relevance_score": 10.0,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "onde",
+      "type": "unigram",
+      "frequency": 9,
+      "relevance_score": 10.0,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "fazer",
+      "type": "unigram",
+      "frequency": 7,
+      "relevance_score": 10.0,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "pratos",
+      "type": "unigram",
+      "frequency": 6,
+      "relevance_score": 10.0,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "lugar",
+      "type": "unigram",
+      "frequency": 5,
+      "relevance_score": 10.0,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "dicas",
+      "type": "unigram",
+      "frequency": 4,
+      "relevance_score": 10.0,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "restaurantes",
+      "type": "unigram",
+      "frequency": 4,
+      "relevance_score": 10.0,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "praias",
+      "type": "unigram",
+      "frequency": 4,
+      "relevance_score": 10.0,
+      "category": "activity",
+      "detailed_category": "activity",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "brasil",
+      "type": "unigram",
+      "frequency": 4,
+      "relevance_score": 10.0,
+      "category": "destination",
+      "detailed_category": "destination",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "quiser",
+      "type": "unigram",
+      "frequency": 4,
+      "relevance_score": 10.0,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "pousada",
+      "type": "unigram",
+      "frequency": 4,
+      "relevance_score": 10.0,
+      "category": "activity",
+      "detailed_category": "activity",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "nordeste",
+      "type": "unigram",
+      "frequency": 3,
+      "relevance_score": 10.0,
+      "category": "destination",
+      "detailed_category": "destination",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "pernambuco",
+      "type": "unigram",
+      "frequency": 3,
+      "relevance_score": 10.0,
+      "category": "destination",
+      "detailed_category": "destination",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    }
+  ],
+  "categorized_terms": {
+    "destination_terms": [
+      {
+        "term": "porto",
+        "type": "unigram",
+        "frequency": 15,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "galinhas",
+        "type": "unigram",
+        "frequency": 15,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "brasil",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "nordeste",
+        "type": "unigram",
+        "frequency": 3,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "pernambuco",
+        "type": "unigram",
+        "frequency": 3,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "porto galinhas",
+        "type": "bigram",
+        "frequency": 15,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "comer porto",
+        "type": "bigram",
+        "frequency": 5,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "galinhas dicas",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "restaurantes porto",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "destinos brasil",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "brasil nordeste",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "onde comer porto",
+        "type": "trigram",
+        "frequency": 5,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "comer porto galinhas",
+        "type": "trigram",
+        "frequency": 5,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "porto galinhas dicas",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "restaurantes porto galinhas",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      }
+    ],
+    "timing_terms": [],
+    "activity_terms": [
+      {
+        "term": "praias",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 10.0,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "pousada",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 10.0,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "praia",
+        "type": "unigram",
+        "frequency": 3,
+        "relevance_score": 10.0,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "passeios",
+        "type": "unigram",
+        "frequency": 2,
+        "relevance_score": 8.11,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "praias onde",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 8.11,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "praias onde comer",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 8.11,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      }
+    ],
+    "price_terms": [],
+    "sentiment_terms": [],
+    "planning_terms": [
+      {
+        "term": "sucesso",
+        "type": "unigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.551,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "galinhas chegar",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.533,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "fazer passeios",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.625,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "passeios praias",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.539,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "porto galinhas chegar",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.562,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "galinhas chegar onde",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.578,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "chegar onde ficar",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.544,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "ficar fazer passeios",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.668,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "fazer passeios praias",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.694,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "passeios praias onde",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.577,
+        "classification_method": "contextual"
+      }
+    ],
+    "accommodation_terms": [],
+    "food_terms": [],
+    "general_terms": [
+      {
+        "term": "comer",
+        "type": "unigram",
+        "frequency": 11,
+        "relevance_score": 10.0,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "onde",
+        "type": "unigram",
+        "frequency": 9,
+        "relevance_score": 10.0,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "fazer",
+        "type": "unigram",
+        "frequency": 7,
+        "relevance_score": 10.0,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "pratos",
+        "type": "unigram",
+        "frequency": 6,
+        "relevance_score": 10.0,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "lugar",
+        "type": "unigram",
+        "frequency": 5,
+        "relevance_score": 10.0,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "dicas",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 10.0,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "restaurantes",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 10.0,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "quiser",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 10.0,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "local",
+        "type": "unigram",
+        "frequency": 3,
+        "relevance_score": 8.11,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "café",
+        "type": "unigram",
+        "frequency": 3,
+        "relevance_score": 8.11,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "refeição",
+        "type": "unigram",
+        "frequency": 3,
+        "relevance_score": 8.11,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "chegar",
+        "type": "unigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "ficar",
+        "type": "unigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "vida",
+        "type": "unigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "noturna",
+        "type": "unigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "atividades",
+        "type": "unigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "transportes",
+        "type": "unigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "guia",
+        "type": "unigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "destinos",
+        "type": "unigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "fica",
+        "type": "unigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "onde comer",
+        "type": "bigram",
+        "frequency": 7,
+        "relevance_score": 10.0,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "chegar onde",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "onde ficar",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "ficar fazer",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "dicas vida",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "vida noturna",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "noturna atividades",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "atividades transportes",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "transportes guia",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "guia destinos",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "onde ficar fazer",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "dicas vida noturna",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "vida noturna atividades",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "noturna atividades transportes",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 5.41,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      }
+    ]
+  },
+  "category_summary": {
+    "destination_terms": {
+      "total_terms": 15,
+      "avg_relevance_score": 10.0,
+      "top_terms": [
+        "porto",
+        "galinhas",
+        "brasil"
+      ]
+    },
+    "activity_terms": {
+      "total_terms": 6,
+      "avg_relevance_score": 9.05,
+      "top_terms": [
+        "praias",
+        "pousada",
+        "praia"
+      ]
+    },
+    "planning_terms": {
+      "total_terms": 10,
+      "avg_relevance_score": 5.41,
+      "top_terms": [
+        "sucesso",
+        "galinhas chegar",
+        "fazer passeios"
+      ]
+    },
+    "general_terms": {
+      "total_terms": 34,
+      "avg_relevance_score": 6.86,
+      "top_terms": [
+        "comer",
+        "onde",
+        "fazer"
+      ]
+    }
+  },
+  "ai_usage": {
+    "total_terms": 65,
+    "contextual_classifications": 10,
+    "keyword_fallbacks": 55
+  }
+}

@@ -1,0 +1,567 @@
+{
+  "analysis_metadata": {
+    "id": "analysis_20250609_094232",
+    "timestamp": "2025-06-09T17:50:32.632064",
+    "total_sites_analyzed": 21
+  },
+  "overall_insights": {
+    "average_sentiment": 0.498,
+    "sentiment_distribution": {
+      "positive": 0,
+      "neutral": 21,
+      "negative": 0
+    }
+  },
+  "category_insights": {
+    "destination_terms": {
+      "total_terms": 193,
+      "unique_terms": 110,
+      "top_terms": [
+        {
+          "term": "porto",
+          "total_frequency": 431,
+          "total_score": 140.0
+        },
+        {
+          "term": "galinhas",
+          "total_frequency": 392,
+          "total_score": 138.44
+        },
+        {
+          "term": "porto galinhas",
+          "total_frequency": 352,
+          "total_score": 126.33
+        },
+        {
+          "term": "brasil",
+          "total_frequency": 30,
+          "total_score": 80.0
+        },
+        {
+          "term": "galinhas chegar",
+          "total_frequency": 14,
+          "total_score": 53.24
+        },
+        {
+          "term": "destinos brasil",
+          "total_frequency": 10,
+          "total_score": 50.0
+        },
+        {
+          "term": "brasil nordeste",
+          "total_frequency": 10,
+          "total_score": 50.0
+        },
+        {
+          "term": "nordeste",
+          "total_frequency": 14,
+          "total_score": 40.0
+        },
+        {
+          "term": "porto galinhas chegar",
+          "total_frequency": 10,
+          "total_score": 35.44
+        },
+        {
+          "term": "recife",
+          "total_frequency": 32,
+          "total_score": 30.0
+        }
+      ]
+    },
+    "timing_terms": {
+      "total_terms": 45,
+      "unique_terms": 43,
+      "top_terms": [
+        {
+          "term": "período",
+          "total_frequency": 5,
+          "total_score": 20.0
+        },
+        {
+          "term": "porto",
+          "total_frequency": 47,
+          "total_score": 10.0
+        },
+        {
+          "term": "galinhas",
+          "total_frequency": 39,
+          "total_score": 10.0
+        },
+        {
+          "term": "praia",
+          "total_frequency": 12,
+          "total_score": 10.0
+        },
+        {
+          "term": "viagem",
+          "total_frequency": 10,
+          "total_score": 10.0
+        },
+        {
+          "term": "centro",
+          "total_frequency": 9,
+          "total_score": 10.0
+        },
+        {
+          "term": "carro",
+          "total_frequency": 9,
+          "total_score": 10.0
+        },
+        {
+          "term": "possui",
+          "total_frequency": 8,
+          "total_score": 10.0
+        },
+        {
+          "term": "possível",
+          "total_frequency": 8,
+          "total_score": 10.0
+        },
+        {
+          "term": "tempo",
+          "total_frequency": 8,
+          "total_score": 10.0
+        }
+      ]
+    },
+    "activity_terms": {
+      "total_terms": 110,
+      "unique_terms": 44,
+      "top_terms": [
+        {
+          "term": "praias",
+          "total_frequency": 55,
+          "total_score": 96.5
+        },
+        {
+          "term": "pousada",
+          "total_frequency": 80,
+          "total_score": 90.0
+        },
+        {
+          "term": "praia",
+          "total_frequency": 159,
+          "total_score": 89.41
+        },
+        {
+          "term": "passeios",
+          "total_frequency": 32,
+          "total_score": 63.28
+        },
+        {
+          "term": "viagem",
+          "total_frequency": 43,
+          "total_score": 58.48
+        },
+        {
+          "term": "passeio",
+          "total_frequency": 41,
+          "total_score": 45.06
+        },
+        {
+          "term": "praias onde",
+          "total_frequency": 10,
+          "total_score": 40.45
+        },
+        {
+          "term": "fazer passeios",
+          "total_frequency": 11,
+          "total_score": 35.14
+        },
+        {
+          "term": "passeios praias",
+          "total_frequency": 8,
+          "total_score": 27.43
+        },
+        {
+          "term": "praias onde comer",
+          "total_frequency": 6,
+          "total_score": 26.0
+        }
+      ]
+    },
+    "price_terms": {
+      "total_terms": 14,
+      "unique_terms": 9,
+      "top_terms": [
+        {
+          "term": "preços",
+          "total_frequency": 71,
+          "total_score": 40.0
+        },
+        {
+          "term": "ver preços",
+          "total_frequency": 67,
+          "total_score": 30.0
+        },
+        {
+          "term": "valores",
+          "total_frequency": 3,
+          "total_score": 10.0
+        },
+        {
+          "term": "preços excursão",
+          "total_frequency": 7,
+          "total_score": 10.0
+        },
+        {
+          "term": "ver preços excursão",
+          "total_frequency": 7,
+          "total_score": 10.0
+        },
+        {
+          "term": "partir ver preços",
+          "total_frequency": 3,
+          "total_score": 10.0
+        },
+        {
+          "term": "inclusive ver preços",
+          "total_frequency": 3,
+          "total_score": 4.17
+        },
+        {
+          "term": "melhores preços passagens",
+          "total_frequency": 2,
+          "total_score": 2.79
+        },
+        {
+          "term": "preços passagens aéreas",
+          "total_frequency": 2,
+          "total_score": 2.79
+        }
+      ]
+    },
+    "sentiment_terms": {
+      "total_terms": 65,
+      "unique_terms": 65,
+      "top_terms": [
+        {
+          "term": "porto",
+          "total_frequency": 38,
+          "total_score": 10.0
+        },
+        {
+          "term": "galinhas",
+          "total_frequency": 29,
+          "total_score": 10.0
+        },
+        {
+          "term": "praia",
+          "total_frequency": 23,
+          "total_score": 10.0
+        },
+        {
+          "term": "like",
+          "total_frequency": 15,
+          "total_score": 10.0
+        },
+        {
+          "term": "opiniões",
+          "total_frequency": 13,
+          "total_score": 10.0
+        },
+        {
+          "term": "piscinas",
+          "total_frequency": 11,
+          "total_score": 10.0
+        },
+        {
+          "term": "naturais",
+          "total_frequency": 11,
+          "total_score": 10.0
+        },
+        {
+          "term": "praias",
+          "total_frequency": 11,
+          "total_score": 10.0
+        },
+        {
+          "term": "brasil",
+          "total_frequency": 8,
+          "total_score": 10.0
+        },
+        {
+          "term": "lugar",
+          "total_frequency": 8,
+          "total_score": 10.0
+        }
+      ]
+    },
+    "planning_terms": {
+      "total_terms": 398,
+      "unique_terms": 294,
+      "top_terms": [
+        {
+          "term": "porto galinhas",
+          "total_frequency": 382,
+          "total_score": 70.0
+        },
+        {
+          "term": "porto",
+          "total_frequency": 410,
+          "total_score": 50.0
+        },
+        {
+          "term": "galinhas",
+          "total_frequency": 315,
+          "total_score": 50.0
+        },
+        {
+          "term": "passeios praias onde",
+          "total_frequency": 14,
+          "total_score": 36.25
+        },
+        {
+          "term": "ficar fazer passeios",
+          "total_frequency": 12,
+          "total_score": 31.76
+        },
+        {
+          "term": "fazer passeios praias",
+          "total_frequency": 12,
+          "total_score": 31.76
+        },
+        {
+          "term": "galinhas chegar onde",
+          "total_frequency": 12,
+          "total_score": 30.99
+        },
+        {
+          "term": "chegar onde ficar",
+          "total_frequency": 12,
+          "total_score": 30.99
+        },
+        {
+          "term": "passeios praias",
+          "total_frequency": 11,
+          "total_score": 30.09
+        },
+        {
+          "term": "praia",
+          "total_frequency": 222,
+          "total_score": 30.0
+        }
+      ]
+    },
+    "accommodation_terms": {
+      "total_terms": 29,
+      "unique_terms": 26,
+      "top_terms": [
+        {
+          "term": "hotéis",
+          "total_frequency": 57,
+          "total_score": 39.29
+        },
+        {
+          "term": "ipojucahotéis",
+          "total_frequency": 12,
+          "total_score": 10.0
+        },
+        {
+          "term": "ver",
+          "total_frequency": 44,
+          "total_score": 10.0
+        },
+        {
+          "term": "resort",
+          "total_frequency": 27,
+          "total_score": 10.0
+        },
+        {
+          "term": "nota",
+          "total_frequency": 24,
+          "total_score": 10.0
+        },
+        {
+          "term": "praia",
+          "total_frequency": 21,
+          "total_score": 10.0
+        },
+        {
+          "term": "hotel",
+          "total_frequency": 20,
+          "total_score": 10.0
+        },
+        {
+          "term": "livre",
+          "total_frequency": 12,
+          "total_score": 10.0
+        },
+        {
+          "term": "ficar",
+          "total_frequency": 11,
+          "total_score": 10.0
+        },
+        {
+          "term": "gratuito",
+          "total_frequency": 9,
+          "total_score": 10.0
+        }
+      ]
+    },
+    "general_terms": {
+      "total_terms": 511,
+      "unique_terms": 272,
+      "top_terms": [
+        {
+          "term": "onde",
+          "total_frequency": 79,
+          "total_score": 104.55
+        },
+        {
+          "term": "fazer",
+          "total_frequency": 72,
+          "total_score": 82.35
+        },
+        {
+          "term": "ficar",
+          "total_frequency": 43,
+          "total_score": 56.37
+        },
+        {
+          "term": "dicas",
+          "total_frequency": 29,
+          "total_score": 53.08
+        },
+        {
+          "term": "piscinas naturais",
+          "total_frequency": 58,
+          "total_score": 48.39
+        },
+        {
+          "term": "vida noturna",
+          "total_frequency": 24,
+          "total_score": 47.93
+        },
+        {
+          "term": "chegar",
+          "total_frequency": 28,
+          "total_score": 45.46
+        },
+        {
+          "term": "piscinas",
+          "total_frequency": 44,
+          "total_score": 45.23
+        },
+        {
+          "term": "atividades",
+          "total_frequency": 27,
+          "total_score": 43.32
+        },
+        {
+          "term": "dicas vida",
+          "total_frequency": 16,
+          "total_score": 41.55
+        }
+      ]
+    }
+  },
+  "site_rankings": [
+    {
+      "name": "Viajante Curioso - Porto de Galinhas",
+      "sentiment": 0.5,
+      "total_terms": 15
+    },
+    {
+      "name": "Viaje na Viagem - Porto de Galinhas",
+      "sentiment": 0.5,
+      "total_terms": 15
+    },
+    {
+      "name": "Viagens Montreal - Quando ir a Porto de Galinhas",
+      "sentiment": 0.5,
+      "total_terms": 15
+    },
+    {
+      "name": "Viaje na Viagem - Quando Ir",
+      "sentiment": 0.5,
+      "total_terms": 15
+    },
+    {
+      "name": "Viaje na Viagem - Roteiros",
+      "sentiment": 0.5,
+      "total_terms": 15
+    },
+    {
+      "name": "Viaja Que Passa - Guia de Porto de Galinhas",
+      "sentiment": 0.5,
+      "total_terms": 15
+    },
+    {
+      "name": "Melhores Destinos - Passeios",
+      "sentiment": 0.5,
+      "total_terms": 15
+    },
+    {
+      "name": "Melhores Destinos - O que Fazer",
+      "sentiment": 0.5,
+      "total_terms": 15
+    },
+    {
+      "name": "Melhores Destinos - Dicas",
+      "sentiment": 0.5,
+      "total_terms": 15
+    },
+    {
+      "name": "Melhores Destinos - Vida Noturna",
+      "sentiment": 0.5,
+      "total_terms": 15
+    },
+    {
+      "name": "Melhores Destinos - Atividades",
+      "sentiment": 0.5,
+      "total_terms": 15
+    },
+    {
+      "name": "ViajaNet Porto de Galinhas",
+      "sentiment": 0.499,
+      "total_terms": 15
+    },
+    {
+      "name": "Minube - Praia de Porto de Galinhas",
+      "sentiment": 0.499,
+      "total_terms": 15
+    },
+    {
+      "name": "Viaje na Viagem - Onde Ficar",
+      "sentiment": 0.499,
+      "total_terms": 15
+    },
+    {
+      "name": "Melhores Destinos - Como Chegar",
+      "sentiment": 0.499,
+      "total_terms": 15
+    },
+    {
+      "name": "TripAdvisor Praia de Porto de Galinhas",
+      "sentiment": 0.498,
+      "total_terms": 15
+    },
+    {
+      "name": "Melhores Destinos - Praias",
+      "sentiment": 0.498,
+      "total_terms": 15
+    },
+    {
+      "name": "Melhores Destinos - Clima",
+      "sentiment": 0.496,
+      "total_terms": 15
+    },
+    {
+      "name": "Melhores Destinos - Restaurantes",
+      "sentiment": 0.496,
+      "total_terms": 15
+    },
+    {
+      "name": "TripAdvisor Porto de Galinhas",
+      "sentiment": 0.494,
+      "total_terms": 15
+    },
+    {
+      "name": "Melhores Destinos - Onde Ficar",
+      "sentiment": 0.49,
+      "total_terms": 15
+    }
+  ]
+}
