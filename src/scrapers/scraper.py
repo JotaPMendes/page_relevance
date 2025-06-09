@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import re
 import nltk
 import json
+import time
 from analyzer import TextAnalyzer
 
 nltk.download('stopwords', quiet=True)
@@ -29,42 +30,37 @@ class WebScraper:
             return []
 
     def extract_content(self, url):
-    """Extrai conteúdo de uma URL com headers personalizados"""
-    try:
-        print(f"📥 Extraindo: {url}")
-        
-        headers = {
-            "User-Agent": (
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                "AppleWebKit/537.36 (KHTML, like Gecko) "
-                "Chrome/122.0.0.0 Safari/537.36"
-            ),
-            "Accept-Language": "pt-BR,pt;q=0.9",
-            "Referer": "https://www.google.com"
-        }
-        
-        session = requests.Session()
-        response = session.get(url, headers=headers, timeout=15)
-        response.raise_for_status()
-        
-        time.sleep(3)  # Espera 3 segundos entre requisições
-        
-        soup = BeautifulSoup(response.content, 'html.parser')
-        
-        for script in soup(["script", "style", "nav", "footer", "header"]):
-            script.extract()
-        
-        text = soup.get_text()
-        text = re.sub(r'\s+', ' ', text).strip()
-        
-        print(f"✅ Extraído: {len(text)} caracteres")
-        return text
-
-    except Exception as e:
-        print(f"❌ Erro ao extrair conteúdo de {url}: {e}")
-        return None
-
+        """Extrai conteúdo de uma URL com headers personalizados"""
+        try:
+            print(f"📥 Extraindo: {url}")
             
+            headers = {
+                "User-Agent": (
+                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                    "AppleWebKit/537.36 (KHTML, like Gecko) "
+                    "Chrome/122.0.0.0 Safari/537.36"
+                ),
+                "Accept-Language": "pt-BR,pt;q=0.9",
+                "Referer": "https://www.google.com"
+            }
+            
+            session = requests.Session()
+            response = session.get(url, headers=headers, timeout=15)
+            response.raise_for_status()
+            
+            time.sleep(3)  # Espera 3 segundos entre requisições
+            
+            soup = BeautifulSoup(response.content, 'html.parser')
+            
+            for script in soup(["script", "style", "nav", "footer", "header"]):
+                script.extract()
+            
+            text = soup.get_text()
+            text = re.sub(r'\s+', ' ', text).strip()
+            
+            print(f"✅ Extraído: {len(text)} caracteres")
+            return text
+
         except Exception as e:
             print(f"❌ Erro ao extrair conteúdo de {url}: {e}")
             return None
@@ -140,7 +136,6 @@ class WebScraper:
         
         for category, terms in categorized_terms.items():
             if terms:
-                # Calcular score médio e pegar top termos
                 avg_score = sum(term['relevance_score'] for term in terms) / len(terms)
                 top_terms = sorted(terms, key=lambda x: x['relevance_score'], reverse=True)[:3]
                 
@@ -156,7 +151,6 @@ class WebScraper:
         """Scraper principal - analisa todos os sites do JSON"""
         print("🚀 Iniciando scraping de múltiplos sites...")
         
-        # Carregar URLs
         sites = self.load_urls_from_json(json_file_path)
         if not sites:
             print("❌ Nenhum site encontrado no JSON")
@@ -192,7 +186,6 @@ class WebScraper:
         report.append("📊 RELATÓRIO RESUMO - ANÁLISE DE SITES")
         report.append("="*50)
         
-        # Estatísticas gerais
         total_sites = len(results)
         avg_sentiment = sum(r['sentiment_analysis']['overall_sentiment'] for r in results) / total_sites
         total_ai_classifications = sum(r['ai_usage']['contextual_classifications'] for r in results)
@@ -205,7 +198,6 @@ class WebScraper:
         report.append(f"  Fallbacks por palavra-chave: {total_fallbacks}")
         report.append(f"  Taxa de uso da IA: {(total_ai_classifications/(total_ai_classifications+total_fallbacks)*100):.1f}%")
         
-        # Análise por site
         report.append(f"\n📋 ANÁLISE POR SITE:")
         for result in results:
             site_name = result['site_info']['name']
@@ -216,7 +208,6 @@ class WebScraper:
             report.append(f"    Sentimento: {sentiment:.3f} ({sentiment_label})")
             report.append(f"    Palavras relevantes: {result['site_info']['relevant_words']}")
             
-            # Top 3 categorias
             categories = result['category_summary']
             top_categories = sorted(categories.items(), key=lambda x: x[1]['total_terms'], reverse=True)[:3]
             
