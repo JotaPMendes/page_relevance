@@ -29,23 +29,41 @@ class WebScraper:
             return []
 
     def extract_content(self, url):
-        """Extrai conteúdo de uma URL"""
-        try:
-            print(f"📥 Extraindo: {url}")
-            response = requests.get(url, timeout=15)
-            response.raise_for_status()
-            
-            soup = BeautifulSoup(response.content, 'html.parser')
-            
-            # Remover scripts e estilos
-            for script in soup(["script", "style", "nav", "footer", "header"]):
-                script.extract()
-            
-            text = soup.get_text()
-            text = re.sub(r'\s+', ' ', text).strip()
-            
-            print(f"✅ Extraído: {len(text)} caracteres")
-            return text
+    """Extrai conteúdo de uma URL com headers personalizados"""
+    try:
+        print(f"📥 Extraindo: {url}")
+        
+        headers = {
+            "User-Agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/122.0.0.0 Safari/537.36"
+            ),
+            "Accept-Language": "pt-BR,pt;q=0.9",
+            "Referer": "https://www.google.com"
+        }
+        
+        session = requests.Session()
+        response = session.get(url, headers=headers, timeout=15)
+        response.raise_for_status()
+        
+        time.sleep(3)  # Espera 3 segundos entre requisições
+        
+        soup = BeautifulSoup(response.content, 'html.parser')
+        
+        for script in soup(["script", "style", "nav", "footer", "header"]):
+            script.extract()
+        
+        text = soup.get_text()
+        text = re.sub(r'\s+', ' ', text).strip()
+        
+        print(f"✅ Extraído: {len(text)} caracteres")
+        return text
+
+    except Exception as e:
+        print(f"❌ Erro ao extrair conteúdo de {url}: {e}")
+        return None
+
             
         except Exception as e:
             print(f"❌ Erro ao extrair conteúdo de {url}: {e}")
