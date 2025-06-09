@@ -29,7 +29,7 @@
     },
     {
       "id": 4,
-      "name": "TripAdvisor Porto de Galinhas",
+      "name": "TripAdvisor Praia de Porto de Galinhas",
       "url": "https://www.tripadvisor.com.br/Attraction_Review-g644402-d15128332-Reviews-Praia_de_Porto_de_Galinha-Ipojuca_State_of_Pernambuco.html",
       "type": "review_site",
       "relevance": "alta",
@@ -53,6 +53,141 @@
       "relevance": "alta",
       "needs_login": false,
       "notes": "Blog com informações úteis sobre Porto de Galinhas, incluindo dicas de viagem e experiências de outros visitantes."
+    },
+    {
+      "id": 7,
+      "name": "Minube - Praia de Porto de Galinhas",
+      "url": "https://www.minube.com.br/sitio-preferido/praia-de-porto-de-galinhas-a757611",
+      "type": "review_site",
+      "relevance": "alta",
+      "needs_login": false,
+      "notes": "Site com experiências e opiniões de viajantes sobre a Praia de Porto de Galinhas."
+    },
+    {
+      "id": 8,
+      "name": "Viaje na Viagem - Quando Ir",
+      "url": "https://www.viajenaviagem.com/destino/porto-de-galinhas/quando-ir/",
+      "type": "blog",
+      "relevance": "alta",
+      "needs_login": false,
+      "notes": "Informações sobre a melhor época para visitar Porto de Galinhas."
+    },
+    {
+      "id": 9,
+      "name": "Viaje na Viagem - Onde Ficar",
+      "url": "https://www.viajenaviagem.com/destino/porto-de-galinhas/onde-ficar/",
+      "type": "blog",
+      "relevance": "alta",
+      "needs_login": false,
+      "notes": "Recomendações de hospedagem em Porto de Galinhas."
+    },
+    {
+      "id": 10,
+      "name": "Viaje na Viagem - Roteiros",
+      "url": "https://www.viajenaviagem.com/destino/porto-de-galinhas/roteiros/",
+      "type": "blog",
+      "relevance": "alta",
+      "needs_login": false,
+      "notes": "Roteiros e sugestões de passeios em Porto de Galinhas."
+    },
+    {
+      "id": 11,
+      "name": "Viaja Que Passa - Guia de Porto de Galinhas",
+      "url": "https://www.viajaquepassa.com.br/porto-de-galinhas-quando-ir-onde-ficar-e-mais-dicas/?utm_source=chatgpt.com",
+      "type": "guia_viagem",
+      "relevance": "alta",
+      "needs_login": false,
+      "notes": "Guia completo com dicas sobre Porto de Galinhas, incluindo hospedagem e clima."
+    },
+    {
+      "id": 12,
+      "name": "Melhores Destinos - Passeios",
+      "url": "https://guia.melhoresdestinos.com.br/passeios-em-porto-de-galinhas-113-1179-p.html",
+      "type": "guia_viagem",
+      "relevance": "alta",
+      "needs_login": false,
+      "notes": "Dicas de passeios em Porto de Galinhas."
+    },
+    {
+      "id": 13,
+      "name": "Melhores Destinos - Clima",
+      "url": "https://guia.melhoresdestinos.com.br/quando-ir-a-porto-de-galinhas-clima.html",
+      "type": "guia_viagem",
+      "relevance": "alta",
+      "needs_login": false,
+      "notes": "Informações sobre o clima e quando visitar Porto de Galinhas."
+    },
+    {
+      "id": 14,
+      "name": "Melhores Destinos - Como Chegar",
+      "url": "https://guia.melhoresdestinos.com.br/como-chegar-a-porto-de-galinhas.html",
+      "type": "guia_viagem",
+      "relevance": "alta",
+      "needs_login": false,
+      "notes": "Dicas sobre como chegar a Porto de Galinhas."
+    },
+    {
+      "id": 15,
+      "name": "Melhores Destinos - Onde Ficar",
+      "url": "https://guia.melhoresdestinos.com.br/onde-ficar-em-porto-de-galinhas.html",
+      "type": "guia_viagem",
+      "relevance": "alta",
+      "needs_login": false,
+      "notes": "Sugestões de hospedagem em Porto de Galinhas."
+    },
+    {
+      "id": 16,
+      "name": "Melhores Destinos - O que Fazer",
+      "url": "https://guia.melhoresdestinos.com.br/o-que-fazer-em-porto-de-galinhas.html",
+      "type": "guia_viagem",
+      "relevance": "alta",
+      "needs_login": false,
+      "notes": "Atividades e pontos turísticos em Porto de Galinhas."
+    },
+    {
+      "id": 17,
+      "name": "Melhores Destinos - Praias",
+      "url": "https://guia.melhoresdestinos.com.br/praias-de-porto-de-galinhas.html",
+      "type": "guia_viagem",
+      "relevance": "alta",
+      "needs_login": false,
+      "notes": "Descrição das praias de Porto de Galinhas."
+    },
+    {
+      "id": 18,
+      "name": "Melhores Destinos - Restaurantes",
+      "url": "https://guia.melhoresdestinos.com.br/onde-comer-em-porto-de-galinhas-restaurantes.html",
+      "type": "guia_viagem",
+      "relevance": "alta",
+      "needs_login": false,
+      "notes": "Sugestões de onde comer em Porto de Galinhas."
+    },
+    {
+      "id": 19,
+      "name": "Melhores Destinos - Dicas",
+      "url": "https://guia.melhoresdestinos.com.br/dicas-de-porto-de-galinhas.html",
+      "type": "guia_viagem",
+      "relevance": "alta",
+      "needs_login": false,
+      "notes": "Dicas gerais para quem vai a Porto de Galinhas."
+    },
+    {
+      "id": 20,
+      "name": "Melhores Destinos - Vida Noturna",
+      "url": "https://guia.melhoresdestinos.com.br/vida-noturna-de-porto-de-galinhas-noite.html",
+      "type": "guia_viagem",
+      "relevance": "alta",
+      "needs_login": false,
+      "notes": "Informações sobre a vida noturna em Porto de Galinhas."
+    },
+    {
+      "id": 21,
+      "name": "Melhores Destinos - Atividades",
+      "url": "https://guia.melhoresdestinos.com.br/atividades-em-porto-de-galinhas.html",
+      "type": "guia_viagem",
+      "relevance": "alta",
+      "needs_login": false,
+      "notes": "Lista de atividades para fazer em Porto de Galinhas."
     }
   ]
 }
