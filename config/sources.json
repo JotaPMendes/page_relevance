@@ -188,6 +188,24 @@
       "relevance": "alta",
       "needs_login": false,
       "notes": "Lista de atividades para fazer em Porto de Galinhas."
+    },
+    {
+      "id": 22,
+      "name": "Viajante Curioso - Não gostei de Porto de Galinhas",
+      "url": "https://viajantecurioso.com.br/pernambuco/nao-gostei-porto-galinhas-pernambuco/",
+      "type": "blog",
+      "relevance": "alta",
+      "needs_login": false,
+      "notes": "Artigo de blog com pontos negativos explícitos e comentários de leitores com experiências variadas."
+    },
+    {
+      "id": 23,
+      "name": "Mochileiros.com - Voltando para Porto de Galinhas / Maragogi 2018",
+      "url": "https://www.mochileiros.com/topic/77985-voltando-para-porto-de-galinhas-maragogi-2018/",
+      "type": "forum",
+      "relevance": "alta",
+      "needs_login": false,
+      "notes": "Discussão em fórum com relatos de viagem que podem incluir experiências e opiniões negativas de outros viajantes."
     }
   ]
 }
