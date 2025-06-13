@@ -1,0 +1,844 @@
+{
+  "site_info": {
+    "name": "Viagens Montreal - Quando ir a Porto de Galinhas",
+    "url": "https://www.viagensmontreal.com/blog/quando-ir-a-porto-de-galinhas-descubra-a-melhor-epoca/",
+    "content_length": 4313,
+    "relevant_words": 384
+  },
+  "sentiment_analysis": {
+    "overall_sentiment": 0.5,
+    "sentiment_confidence": 0.5,
+    "chunks_analyzed": 11,
+    "method": "transformer"
+  },
+  "top_terms": [
+    {
+      "term": "porto",
+      "type": "unigram",
+      "frequency": 10,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.677,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "galinhas",
+      "type": "unigram",
+      "frequency": 10,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.703,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "viagem",
+      "type": "unigram",
+      "frequency": 9,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.696,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "dicas",
+      "type": "unigram",
+      "frequency": 7,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.527,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "conhecer",
+      "type": "unigram",
+      "frequency": 5,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.756,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "melhor",
+      "type": "unigram",
+      "frequency": 4,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.659,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "época",
+      "type": "unigram",
+      "frequency": 4,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.685,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "quer",
+      "type": "unigram",
+      "frequency": 4,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.67,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "algumas",
+      "type": "unigram",
+      "frequency": 4,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.683,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "melhores",
+      "type": "unigram",
+      "frequency": 4,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.67,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "praias",
+      "type": "unigram",
+      "frequency": 4,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.644,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "hospedagem",
+      "type": "unigram",
+      "frequency": 4,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.611,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "planejamento",
+      "type": "unigram",
+      "frequency": 4,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.707,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "viagens",
+      "type": "unigram",
+      "frequency": 3,
+      "relevance_score": 7.81,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.69,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "litoral",
+      "type": "unigram",
+      "frequency": 3,
+      "relevance_score": 7.81,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.702,
+      "classification_method": "contextual"
+    }
+  ],
+  "categorized_terms": {
+    "destination_terms": [],
+    "timing_terms": [],
+    "activity_terms": [],
+    "price_terms": [],
+    "sentiment_terms": [],
+    "planning_terms": [
+      {
+        "term": "porto",
+        "type": "unigram",
+        "frequency": 10,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.677,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "galinhas",
+        "type": "unigram",
+        "frequency": 10,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.703,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "viagem",
+        "type": "unigram",
+        "frequency": 9,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.696,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "dicas",
+        "type": "unigram",
+        "frequency": 7,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.527,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "conhecer",
+        "type": "unigram",
+        "frequency": 5,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.756,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "melhor",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.659,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "época",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.685,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "quer",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.67,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "algumas",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.683,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "melhores",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.67,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "praias",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.644,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "hospedagem",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.611,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "planejamento",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.707,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "viagens",
+        "type": "unigram",
+        "frequency": 3,
+        "relevance_score": 7.81,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.69,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "litoral",
+        "type": "unigram",
+        "frequency": 3,
+        "relevance_score": 7.81,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.702,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "naturais",
+        "type": "unigram",
+        "frequency": 3,
+        "relevance_score": 7.81,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.67,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "ano",
+        "type": "unigram",
+        "frequency": 3,
+        "relevance_score": 7.81,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.714,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "todo",
+        "type": "unigram",
+        "frequency": 3,
+        "relevance_score": 7.81,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.609,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "momento",
+        "type": "unigram",
+        "frequency": 3,
+        "relevance_score": 7.81,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.699,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "passeios",
+        "type": "unigram",
+        "frequency": 3,
+        "relevance_score": 7.81,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.621,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "ter",
+        "type": "unigram",
+        "frequency": 3,
+        "relevance_score": 7.81,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.688,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "resorts",
+        "type": "unigram",
+        "frequency": 3,
+        "relevance_score": 7.81,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.542,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "conforto",
+        "type": "unigram",
+        "frequency": 3,
+        "relevance_score": 7.81,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.698,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "viajar",
+        "type": "unigram",
+        "frequency": 3,
+        "relevance_score": 7.81,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.66,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "descubra",
+        "type": "unigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.738,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "montreal",
+        "type": "unigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.682,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "vale",
+        "type": "unigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.725,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "pena",
+        "type": "unigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.709,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "dias",
+        "type": "unigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.606,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "clima",
+        "type": "unigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.697,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "porto galinhas",
+        "type": "bigram",
+        "frequency": 10,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.797,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "melhor época",
+        "type": "bigram",
+        "frequency": 3,
+        "relevance_score": 7.81,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.712,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "dicas viagem",
+        "type": "bigram",
+        "frequency": 3,
+        "relevance_score": 7.81,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.574,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "galinhas descubra",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.766,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "descubra melhor",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.739,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "montreal viagens",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.696,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "vale pena",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.731,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "algumas melhores",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.708,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "melhores atrações",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.694,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "época ano",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.651,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "litoral pernambucano",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.744,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "piscinas naturais",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.676,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "muro alto",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.682,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "passeios buggy",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.571,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "todo conforto",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.665,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "viagem dicas",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.604,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "planejamento financeiro",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.637,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "financeiro viajar",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.686,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "economizar hospedagem",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.678,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "avaliar hotel",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.514,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "porto galinhas descubra",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.791,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "galinhas descubra melhor",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.755,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "descubra melhor época",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.715,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "dicas viagem dicas",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.559,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "planejamento financeiro viajar",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.689,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "clique aqui cancelar",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.624,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "aqui cancelar resposta",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 5.21,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.662,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "melhor época blog",
+        "type": "trigram",
+        "frequency": 1,
+        "relevance_score": 2.6,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.696,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "época blog montreal",
+        "type": "trigram",
+        "frequency": 1,
+        "relevance_score": 2.6,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.686,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "blog montreal viagens",
+        "type": "trigram",
+        "frequency": 1,
+        "relevance_score": 2.6,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.714,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "montreal viagens destinos",
+        "type": "trigram",
+        "frequency": 1,
+        "relevance_score": 2.6,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.712,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "viagens destinos porto",
+        "type": "trigram",
+        "frequency": 1,
+        "relevance_score": 2.6,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.757,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "destinos porto galinhas",
+        "type": "trigram",
+        "frequency": 1,
+        "relevance_score": 2.6,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.792,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "melhor época litoral",
+        "type": "trigram",
+        "frequency": 1,
+        "relevance_score": 2.6,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.703,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "época litoral pernambuco",
+        "type": "trigram",
+        "frequency": 1,
+        "relevance_score": 2.6,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.75,
+        "classification_method": "contextual"
+      }
+    ],
+    "accommodation_terms": [],
+    "food_terms": [],
+    "general_terms": []
+  },
+  "category_summary": {
+    "planning_terms": {
+      "total_terms": 65,
+      "avg_relevance_score": 6.44,
+      "top_terms": [
+        "porto",
+        "galinhas",
+        "viagem"
+      ]
+    }
+  },
+  "ai_usage": {
+    "total_terms": 65,
+    "contextual_classifications": 65,
+    "keyword_fallbacks": 0
+  }
+}

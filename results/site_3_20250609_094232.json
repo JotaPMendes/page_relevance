@@ -1,0 +1,864 @@
+{
+  "site_info": {
+    "name": "Viaje na Viagem - Porto de Galinhas",
+    "url": "https://www.viajenaviagem.com/destino/porto-de-galinhas/",
+    "content_length": 16065,
+    "relevant_words": 1563
+  },
+  "sentiment_analysis": {
+    "overall_sentiment": 0.5,
+    "sentiment_confidence": 0.5,
+    "chunks_analyzed": 41,
+    "method": "transformer"
+  },
+  "top_terms": [
+    {
+      "term": "porto",
+      "type": "unigram",
+      "frequency": 41,
+      "relevance_score": 10.0,
+      "category": "destination",
+      "detailed_category": "destination",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "galinhas",
+      "type": "unigram",
+      "frequency": 36,
+      "relevance_score": 10.0,
+      "category": "destination",
+      "detailed_category": "destination",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "praia",
+      "type": "unigram",
+      "frequency": 31,
+      "relevance_score": 10.0,
+      "category": "activity",
+      "detailed_category": "activity",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "recife",
+      "type": "unigram",
+      "frequency": 18,
+      "relevance_score": 10.0,
+      "category": "destination",
+      "detailed_category": "destination",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "dias",
+      "type": "unigram",
+      "frequency": 16,
+      "relevance_score": 10.0,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "carneiros",
+      "type": "unigram",
+      "frequency": 15,
+      "relevance_score": 9.6,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "maragogi",
+      "type": "unigram",
+      "frequency": 15,
+      "relevance_score": 9.6,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "passeios",
+      "type": "unigram",
+      "frequency": 13,
+      "relevance_score": 10.0,
+      "category": "activity",
+      "detailed_category": "activity",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "pousada",
+      "type": "unigram",
+      "frequency": 13,
+      "relevance_score": 10.0,
+      "category": "activity",
+      "detailed_category": "activity",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "fazer",
+      "type": "unigram",
+      "frequency": 12,
+      "relevance_score": 7.68,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "olá",
+      "type": "unigram",
+      "frequency": 12,
+      "relevance_score": 7.68,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "volta",
+      "type": "unigram",
+      "frequency": 11,
+      "relevance_score": 7.04,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "destino",
+      "type": "unigram",
+      "frequency": 10,
+      "relevance_score": 6.4,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "muro",
+      "type": "unigram",
+      "frequency": 10,
+      "relevance_score": 6.4,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "alto",
+      "type": "unigram",
+      "frequency": 10,
+      "relevance_score": 6.4,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    }
+  ],
+  "categorized_terms": {
+    "destination_terms": [
+      {
+        "term": "porto",
+        "type": "unigram",
+        "frequency": 41,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "galinhas",
+        "type": "unigram",
+        "frequency": 36,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "recife",
+        "type": "unigram",
+        "frequency": 18,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "porto galinhas",
+        "type": "bigram",
+        "frequency": 36,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "destino porto",
+        "type": "bigram",
+        "frequency": 5,
+        "relevance_score": 6.4,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "dias recife",
+        "type": "bigram",
+        "frequency": 4,
+        "relevance_score": 5.12,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "galinhas fazer",
+        "type": "bigram",
+        "frequency": 4,
+        "relevance_score": 5.12,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "viagem porto",
+        "type": "bigram",
+        "frequency": 3,
+        "relevance_score": 3.84,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "galinhas olá",
+        "type": "bigram",
+        "frequency": 3,
+        "relevance_score": 3.84,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "viajenaviagem destino porto",
+        "type": "trigram",
+        "frequency": 5,
+        "relevance_score": 6.4,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "destino porto galinhas",
+        "type": "trigram",
+        "frequency": 5,
+        "relevance_score": 6.4,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "porto galinhas fazer",
+        "type": "trigram",
+        "frequency": 4,
+        "relevance_score": 5.12,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "viagem porto galinhas",
+        "type": "trigram",
+        "frequency": 3,
+        "relevance_score": 3.84,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "porto galinhas olá",
+        "type": "trigram",
+        "frequency": 3,
+        "relevance_score": 3.84,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "porto galinhas recife",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 2.56,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "recife roteiro dias",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 2.56,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "roteiro dias recife",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 2.56,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      }
+    ],
+    "timing_terms": [],
+    "activity_terms": [
+      {
+        "term": "praia",
+        "type": "unigram",
+        "frequency": 31,
+        "relevance_score": 10.0,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "passeios",
+        "type": "unigram",
+        "frequency": 13,
+        "relevance_score": 10.0,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "pousada",
+        "type": "unigram",
+        "frequency": 13,
+        "relevance_score": 10.0,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "viagem",
+        "type": "unigram",
+        "frequency": 9,
+        "relevance_score": 8.64,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "viajenaviagem",
+        "type": "unigram",
+        "frequency": 9,
+        "relevance_score": 8.64,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "passeio",
+        "type": "unigram",
+        "frequency": 8,
+        "relevance_score": 7.68,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "www viajenaviagem",
+        "type": "bigram",
+        "frequency": 9,
+        "relevance_score": 8.64,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "viajenaviagem destino",
+        "type": "bigram",
+        "frequency": 9,
+        "relevance_score": 8.64,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "praia carneiros",
+        "type": "bigram",
+        "frequency": 6,
+        "relevance_score": 5.76,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "bar praia",
+        "type": "bigram",
+        "frequency": 5,
+        "relevance_score": 4.8,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "dividir viagem",
+        "type": "bigram",
+        "frequency": 3,
+        "relevance_score": 2.88,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "praia maracaípe",
+        "type": "bigram",
+        "frequency": 3,
+        "relevance_score": 2.88,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "praia muro",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 1.92,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "https www viajenaviagem",
+        "type": "trigram",
+        "frequency": 9,
+        "relevance_score": 8.64,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "www viajenaviagem destino",
+        "type": "trigram",
+        "frequency": 9,
+        "relevance_score": 8.64,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "praia muro alto",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 1.92,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      }
+    ],
+    "price_terms": [],
+    "sentiment_terms": [],
+    "planning_terms": [],
+    "accommodation_terms": [],
+    "food_terms": [],
+    "general_terms": [
+      {
+        "term": "dias",
+        "type": "unigram",
+        "frequency": 16,
+        "relevance_score": 10.0,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "carneiros",
+        "type": "unigram",
+        "frequency": 15,
+        "relevance_score": 9.6,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "maragogi",
+        "type": "unigram",
+        "frequency": 15,
+        "relevance_score": 9.6,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "fazer",
+        "type": "unigram",
+        "frequency": 12,
+        "relevance_score": 7.68,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "olá",
+        "type": "unigram",
+        "frequency": 12,
+        "relevance_score": 7.68,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "volta",
+        "type": "unigram",
+        "frequency": 11,
+        "relevance_score": 7.04,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "destino",
+        "type": "unigram",
+        "frequency": 10,
+        "relevance_score": 6.4,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "muro",
+        "type": "unigram",
+        "frequency": 10,
+        "relevance_score": 6.4,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "alto",
+        "type": "unigram",
+        "frequency": 10,
+        "relevance_score": 6.4,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "bate",
+        "type": "unigram",
+        "frequency": 9,
+        "relevance_score": 5.76,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "dois",
+        "type": "unigram",
+        "frequency": 9,
+        "relevance_score": 5.76,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "https",
+        "type": "unigram",
+        "frequency": 9,
+        "relevance_score": 5.76,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "www",
+        "type": "unigram",
+        "frequency": 9,
+        "relevance_score": 5.76,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "carro",
+        "type": "unigram",
+        "frequency": 8,
+        "relevance_score": 5.12,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "fizemos",
+        "type": "unigram",
+        "frequency": 8,
+        "relevance_score": 5.12,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "pra",
+        "type": "unigram",
+        "frequency": 8,
+        "relevance_score": 5.12,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "ficar",
+        "type": "unigram",
+        "frequency": 7,
+        "relevance_score": 4.48,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "boa",
+        "type": "unigram",
+        "frequency": 7,
+        "relevance_score": 4.48,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "use",
+        "type": "unigram",
+        "frequency": 7,
+        "relevance_score": 4.48,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "bar",
+        "type": "unigram",
+        "frequency": 7,
+        "relevance_score": 4.48,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "pena",
+        "type": "unigram",
+        "frequency": 7,
+        "relevance_score": 4.48,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "muro alto",
+        "type": "bigram",
+        "frequency": 10,
+        "relevance_score": 6.4,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "bate volta",
+        "type": "bigram",
+        "frequency": 9,
+        "relevance_score": 5.76,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "https www",
+        "type": "bigram",
+        "frequency": 9,
+        "relevance_score": 5.76,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "day use",
+        "type": "bigram",
+        "frequency": 6,
+        "relevance_score": 3.84,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "vale pena",
+        "type": "bigram",
+        "frequency": 4,
+        "relevance_score": 2.56,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "piscinas naturais",
+        "type": "bigram",
+        "frequency": 3,
+        "relevance_score": 1.92,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "além disso",
+        "type": "bigram",
+        "frequency": 3,
+        "relevance_score": 1.92,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "muro alto pontal",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 1.28,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "alto pontal cupe",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 1.28,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "causou boa impressão",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 1.28,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "bate volta maragogi",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 1.28,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      }
+    ]
+  },
+  "category_summary": {
+    "destination_terms": {
+      "total_terms": 17,
+      "avg_relevance_score": 5.74,
+      "top_terms": [
+        "porto",
+        "galinhas",
+        "recife"
+      ]
+    },
+    "activity_terms": {
+      "total_terms": 16,
+      "avg_relevance_score": 6.86,
+      "top_terms": [
+        "praia",
+        "passeios",
+        "pousada"
+      ]
+    },
+    "general_terms": {
+      "total_terms": 32,
+      "avg_relevance_score": 5.15,
+      "top_terms": [
+        "dias",
+        "carneiros",
+        "maragogi"
+      ]
+    }
+  },
+  "ai_usage": {
+    "total_terms": 65,
+    "contextual_classifications": 0,
+    "keyword_fallbacks": 65
+  }
+}

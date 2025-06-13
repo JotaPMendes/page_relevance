@@ -1,0 +1,40 @@
+📊 RELATÓRIO RESUMO - ANÁLISE DE SITES
+==================================================
+
+🔢 ESTATÍSTICAS GERAIS:
+  Sites processados: 21
+  Sites analisados: 1
+  Sites falharam: 20
+  Taxa de sucesso: 4.8%
+  Sentimento médio: 0.651
+  Classificações com IA: 49
+  Fallbacks por palavra-chave: 16
+  Taxa de uso da IA: 75.4%
+
+📋 ANÁLISE POR SITE:
+
+  🌐 Viajante Curioso - Porto de Galinhas
+    Sentimento: 0.651 (Positivo)
+    Palavras relevantes: 14733
+
+❌ SITES QUE FALHARAM:
+  - TripAdvisor Porto de Galinhas
+  - Viaje na Viagem - Porto de Galinhas
+  - TripAdvisor Praia de Porto de Galinhas
+  - ViajaNet Porto de Galinhas
+  - Viagens Montreal - Quando ir a Porto de Galinhas
+  - Minube - Praia de Porto de Galinhas
+  - Viaje na Viagem - Quando Ir
+  - Viaje na Viagem - Onde Ficar
+  - Viaje na Viagem - Roteiros
+  - Viaja Que Passa - Guia de Porto de Galinhas
+  - Melhores Destinos - Passeios
+  - Melhores Destinos - Clima
+  - Melhores Destinos - Como Chegar
+  - Melhores Destinos - Onde Ficar
+  - Melhores Destinos - O que Fazer
+  - Melhores Destinos - Praias
+  - Melhores Destinos - Restaurantes
+  - Melhores Destinos - Dicas
+  - Melhores Destinos - Vida Noturna
+  - Melhores Destinos - Atividades
