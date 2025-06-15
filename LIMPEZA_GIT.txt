@@ -1,0 +1,20 @@
+Remover os seguintes arquivos e pastas excedentes do projeto:
+
+# Arquivos não utilizados
+src/analyzer_backup.py
+src/analyzer_bart.py
+src/analyzer_birch.py
+
+# Pasta de código duplicado
+src/scrapers/
+
+# Cache do Python
+src/__pycache__/
+
+# Comando sugerido para limpeza (no terminal, na raiz do projeto):
+git rm -r --cached src/analyzer_backup.py src/analyzer_bart.py src/analyzer_birch.py src/scrapers src/__pycache__
+rm -rf src/analyzer_backup.py src/analyzer_bart.py src/analyzer_birch.py src/scrapers src/__pycache__
+
+git add .
+git commit -m "Limpeza: removendo arquivos e pastas excedentes do projeto"
+git push
