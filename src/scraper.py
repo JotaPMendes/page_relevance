@@ -4,19 +4,50 @@ import re
 import nltk
 import json
 import time
+import os
+import torch
+from multiprocessing import Pool, cpu_count
 from analyzer import TextAnalyzer
 
 nltk.download('stopwords', quiet=True)
 nltk.download('punkt', quiet=True)
+
+def check_gpu():
+    """Verifica disponibilidade e status da GPU"""
+    if torch.cuda.is_available():
+        gpu_name = torch.cuda.get_device_name(0)
+        total_memory = torch.cuda.get_device_properties(0).total_memory / (1024**2)
+        memory_allocated = torch.cuda.memory_allocated(0) / (1024**2)
+        memory_cached = torch.cuda.memory_reserved(0) / (1024**2)
+        
+        print(f"\n🎮 GPU Disponível: {gpu_name}")
+        print(f"   - Memória Total: {total_memory:.0f}MB")
+        print(f"   - Memória Em Uso: {memory_allocated:.0f}MB")
+        print(f"   - Memória Cache: {memory_cached:.0f}MB")
+        return True
+    else:
+        print("\n💻 GPU não encontrada, usando CPU")
+        return False
+
+# Get the absolute path to the project root
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 
 class WebScraper:
     def __init__(self):
         self.stop_words = set(nltk.corpus.stopwords.words('portuguese'))
         self.stop_words.update(['que', 'para', 'com', 'uma', 'mais', 'muito', 'pode', 'ser', 'tem', 'vai', 'seu', 'sua', 'isso', 'essa', 'este'])
         
+        # Verificar GPU antes de inicializar
+        self.has_gpu = check_gpu()
+        
         # Inicializar o analyzer com transformers
         print("🤖 Inicializando analyzer com transformers...")
         self.analyzer = TextAnalyzer()
+        
+        if self.has_gpu:
+            torch.cuda.empty_cache()  # Limpa memória GPU
+        
         print("✅ Analyzer carregado!")
 
     def load_urls_from_json(self, json_file_path):
@@ -76,7 +107,10 @@ class WebScraper:
         return original_text, filtered_words, len(filtered_words)
 
     def analyze_single_site(self, site_data):
-        """Analisa um único site"""
+        """Analisa um único site com suporte a GPU"""
+        if self.has_gpu:
+            torch.cuda.empty_cache()  # Limpa cache antes de cada análise
+            
         url = site_data.get('url')
         site_name = site_data.get('name', 'Site desconhecido')
         
@@ -114,7 +148,8 @@ class WebScraper:
                 'name': site_name,
                 'url': url,
                 'content_length': len(content),
-                'relevant_words': total_words
+                'relevant_words': total_words,
+                'content': original_text  # Adiciona o texto do site para análise de sentimento contextual
             },
             'sentiment_analysis': sentiment_result,
             'top_terms': all_terms[:15],  # Top 15 termos
@@ -149,7 +184,11 @@ class WebScraper:
 
     def scrape_all_sites(self, json_file_path):
         """Scraper principal - analisa todos os sites do JSON"""
-        print("🚀 Iniciando scraping de múltiplos sites...")
+        print("🚀 Iniciando scraping com analyzer_bart...")
+        
+        # Converter para caminho absoluto se necessário
+        if not os.path.isabs(json_file_path):
+            json_file_path = os.path.join(PROJECT_ROOT, json_file_path)
         
         sites = self.load_urls_from_json(json_file_path)
         if not sites:
@@ -158,22 +197,45 @@ class WebScraper:
         
         print(f"📋 {len(sites)} sites carregados do JSON")
         
+        # Análise sequencial com analyzer_bart
         results = []
-        
         for i, site in enumerate(sites, 1):
-            print(f"\n{'='*60}")
-            print(f"📊 SITE {i}/{len(sites)}")
+            print(f"[{i}/{len(sites)}] Analisando: {site.get('name', 'Site Desconhecido')}")
             
-            result = self.analyze_single_site(site)
-            if result:
-                results.append(result)
-            else:
-                print(f"❌ Falha na análise do site {site.get('name', 'desconhecido')}")
+            try:
+                result = self.analyze_single_site(site)
+                if result:
+                    results.append(result)
+                    sentiment = result['sentiment_analysis']['overall_sentiment']
+                    method = result['sentiment_analysis'].get('method', 'unknown')
+                    print(f"  ✅ Sentiment: {sentiment:.3f} (método: {method})")
+                else:
+                    print(f"  ❌ Falha na análise")
+            except Exception as e:
+                print(f"  ❌ Erro na análise: {e}")
+            
+            # Pausa entre análises
+            time.sleep(2)
+        
+        if self.has_gpu:
+            torch.cuda.empty_cache()  # Limpa cache GPU ao finalizar
         
         print(f"\n{'='*60}")
-        print(f"🎯 SCRAPING CONCLUÍDO!")
+        print(f"🎯 ANÁLISE CONCLUÍDA!")
         print(f"✅ {len(results)} sites analisados com sucesso")
         print(f"❌ {len(sites) - len(results)} sites falharam")
+        
+        if results:
+            # Mostrar distribuição de sentimentos
+            sentiments = [r['sentiment_analysis']['overall_sentiment'] for r in results]
+            positive = len([s for s in sentiments if s > 0.55])
+            neutral = len([s for s in sentiments if 0.4 <= s <= 0.55])
+            negative = len([s for s in sentiments if s < 0.4])
+            
+            print(f"\n📊 DISTRIBUIÇÃO DE SENTIMENTOS:")
+            print(f"  😊 Positivos: {positive} ({positive/len(results)*100:.1f}%)")
+            print(f"  😐 Neutros: {neutral} ({neutral/len(results)*100:.1f}%)")
+            print(f"  😞 Negativos: {negative} ({negative/len(results)*100:.1f}%)")
         
         return results
 
@@ -202,7 +264,7 @@ class WebScraper:
         for result in results:
             site_name = result['site_info']['name']
             sentiment = result['sentiment_analysis']['overall_sentiment']
-            sentiment_label = "Positivo" if sentiment > 0.6 else "Neutro" if sentiment > 0.4 else "Negativo"
+            sentiment_label = "Positivo" if sentiment > 0.55 else "Neutro" if sentiment > 0.4 else "Negativo"
             
             report.append(f"\n  🌐 {site_name}")
             report.append(f"    Sentimento: {sentiment:.3f} ({sentiment_label})")

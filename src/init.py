@@ -1,8 +1,14 @@
-from analyzer import TextAnalyzer
-from scraper import WebScraper
 import os
 import json
 from datetime import datetime
+from analyzer import TextAnalyzer
+from scraper import WebScraper
+
+# Get absolute paths
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+DEFAULT_CONFIG_PATH = os.path.join(PROJECT_ROOT, "config", "source.json")
+DEFAULT_RESULTS_DIR = os.path.join(PROJECT_ROOT, "results")
 
 def generate_analysis_id():
     """Gera ID único para a análise"""
@@ -24,47 +30,22 @@ def run_complete_analysis(json_path=None, output_dir=None):
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     analysis_id = generate_analysis_id()
     
-    # Definir caminhos padrão se não fornecidos
-    if json_path is None:
-        # Obter diretório raiz do projeto (page_relevance)
-        current_dir = os.path.dirname(os.path.abspath(__file__))
-        project_root = current_dir
-        
-        # Navegar até encontrar a pasta page_relevance
-        while project_root and not project_root.endswith('page_relevance'):
-            parent = os.path.dirname(project_root)
-            if parent == project_root:  # Chegou na raiz do sistema
-                break
-            project_root = parent
-        
-        # Caminhos possíveis para sources.json
-        possible_paths = [
-            os.path.join(project_root, "config", "sources.json"),
-            os.path.join(os.path.dirname(current_dir), "config", "sources.json"),
-            os.path.join(os.path.dirname(os.path.dirname(current_dir)), "config", "sources.json"),
-            "../../config/sources.json",
-            "../config/sources.json",
-            "config/sources.json",
-            "sources.json"
-        ]
-        
-        json_path = None
-        for path in possible_paths:
-            if os.path.exists(path):
-                json_path = path
-                print(f"✅ JSON encontrado em: {path}")
-                break
-        
-        if json_path is None:
-            print("❌ Arquivo sources.json não encontrado!")
-            print("Caminhos verificados:")
-            for path in possible_paths:
-                print(f"  - {path}")
-            print("Criando arquivo de exemplo...")
-            json_path = create_example_sites_json()
+    # Usar caminhos padrão se não fornecidos
+    json_path = json_path or DEFAULT_CONFIG_PATH
     
-    if output_dir is None:
-        output_dir = "results"
+    # Converter para caminho absoluto se for relativo
+    if not os.path.isabs(json_path):
+        json_path = os.path.join(PROJECT_ROOT, json_path)
+        
+    if not os.path.exists(json_path):
+        print("❌ Arquivo source.json não encontrado!")
+        print(f"Procurado em: {json_path}")
+        return None
+    
+    # Configurar diretório de saída
+    output_dir = output_dir or DEFAULT_RESULTS_DIR
+    if not os.path.isabs(output_dir):
+        output_dir = os.path.join(PROJECT_ROOT, output_dir)
     
     # Criar diretório de resultados
     os.makedirs(output_dir, exist_ok=True)
@@ -85,103 +66,56 @@ def run_complete_analysis(json_path=None, output_dir=None):
     # Inicializar scraper com transformers
     print(f"\n🤖 Inicializando scraper com IA...")
     scraper = WebScraper()
-    
+
     # =============================
-    # ANÁLISE COM SALVAMENTO PROGRESSIVO
+    # ANÁLISE COM PySpark PARALELO
     # =============================
-    print(f"\n🔍 INICIANDO ANÁLISE COM SALVAMENTO PROGRESSIVO...")
-    
-    results = []
-    failed_sites = []
-    
-    # Arquivo de backup progressivo
-    backup_file = os.path.join(output_dir, f"backup_progress_{timestamp}.json")
-    
-    for i, site in enumerate(sites, 1):
-        print(f"\n{'='*50}")
-        print(f"📊 PROCESSANDO SITE {i}/{len(sites)}")
-        print(f"🌐 {site.get('name', 'Site desconhecido')}")
-        
-        try:
-            # Analisar site individual
-            result = scraper.analyze_single_site(site)
-            
-            if result:
-                results.append(result)
-                print(f"✅ Site {i} processado com sucesso!")
-                
-                # SALVAR IMEDIATAMENTE após cada site
-                individual_file = os.path.join(output_dir, f"site_{i}_{timestamp}.json")
-                with open(individual_file, 'w', encoding='utf-8') as f:
-                    json.dump(result, f, ensure_ascii=False, indent=2)
-                print(f"💾 Resultado individual salvo: {individual_file}")
-                
-                # BACKUP PROGRESSIVO a cada 2 sites
-                if len(results) % 2 == 0 or i == len(sites):
-                    backup_data = {
-                        'analysis_id': analysis_id,
-                        'timestamp': timestamp,
-                        'processed_sites': len(results),
-                        'total_sites': len(sites),
-                        'results': results
-                    }
-                    
-                    with open(backup_file, 'w', encoding='utf-8') as f:
-                        json.dump(backup_data, f, ensure_ascii=False, indent=2)
-                    print(f"🔄 Backup atualizado: {len(results)} sites processados")
-                
-            else:
-                failed_sites.append(site)
-                print(f"❌ Falha no site {i}")
-                
-        except Exception as e:
-            print(f"❌ Erro crítico no site {i}: {e}")
-            failed_sites.append(site)
-            continue
-    
+    print(f"\n🔍 INICIANDO ANÁLISE PARALELA COM PySpark...")
+    results = scraper.scrape_all_sites(json_path)
+    failed_sites = []  # Não temos como identificar sites falhos diretamente aqui
+
     # =============================
     # RELATÓRIOS FINAIS
     # =============================
-    
     if not results:
         print("\n❌ NENHUM SITE FOI ANALISADO COM SUCESSO!")
         return None
-    
+
     print(f"\n🎯 PROCESSAMENTO CONCLUÍDO!")
     print(f"✅ {len(results)} sites analisados com sucesso")
     print(f"❌ {len(failed_sites)} sites falharam")
-    
+
     # Salvar resultados detalhados FINAIS
     detailed_file = os.path.join(output_dir, f"analysis_detailed_{timestamp}.json")
     final_data = {
         'analysis_metadata': {
             'id': analysis_id,
             'timestamp': timestamp,
-            'total_sites': len(sites),
+            'total_sites': len(results),
             'successful_sites': len(results),
             'failed_sites': len(failed_sites)
         },
         'results': results,
         'failed_sites': failed_sites
     }
-    
+
     with open(detailed_file, 'w', encoding='utf-8') as f:
         json.dump(final_data, f, ensure_ascii=False, indent=2)
-    
+
     # Gerar e salvar relatório resumo
     report = generate_summary_report(results, failed_sites)
     report_file = os.path.join(output_dir, f"analysis_report_{timestamp}.txt")
-    
+
     with open(report_file, 'w', encoding='utf-8') as f:
         f.write(report)
-    
+
     # Gerar relatório consolidado
     consolidated_report = generate_consolidated_report(results, analysis_id)
     consolidated_file = os.path.join(output_dir, f"analysis_consolidated_{timestamp}.json")
-    
+
     with open(consolidated_file, 'w', encoding='utf-8') as f:
         json.dump(consolidated_report, f, ensure_ascii=False, indent=2)
-    
+
     # Exibir resultados finais
     print("\n" + "="*60)
     print("🎯 ANÁLISE COMPLETA FINALIZADA!")
@@ -191,8 +125,8 @@ def run_complete_analysis(json_path=None, output_dir=None):
     print(f"  📊 Relatório detalhado: {detailed_file}")
     print(f"  📋 Relatório resumo: {report_file}")
     print(f"  📈 Relatório consolidado: {consolidated_file}")
-    print(f"  🔄 Backup progressivo: {backup_file}")
-    
+    # print(f"  🔄 Backup progressivo: {backup_file}")  # Não há backup progressivo no modo paralelo
+
     return {
         'analysis_id': analysis_id,
         'results': results,
@@ -200,8 +134,7 @@ def run_complete_analysis(json_path=None, output_dir=None):
         'files': {
             'detailed': detailed_file,
             'report': report_file,
-            'consolidated': consolidated_file,
-            'backup': backup_file
+            'consolidated': consolidated_file
         }
     }
 
@@ -294,7 +227,7 @@ def generate_summary_report(results, failed_sites):
     for result in results:
         site_name = result['site_info']['name']
         sentiment = result['sentiment_analysis']['overall_sentiment']
-        sentiment_label = "Positivo" if sentiment > 0.6 else "Neutro" if sentiment > 0.4 else "Negativo"
+        sentiment_label = "Positivo" if sentiment > 0.55 else "Neutro" if sentiment > 0.4 else "Negativo"
         
         report.append(f"\n  🌐 {site_name}")
         report.append(f"    Sentimento: {sentiment:.3f} ({sentiment_label})")

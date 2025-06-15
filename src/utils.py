@@ -39,7 +39,7 @@ def identify_audience_intent(insights):
 def calculate_ad_potential(terms, sentiment):
     high_relevance_terms = [t for t in terms if t['relevance_score'] > 5.0]
     
-    if len(high_relevance_terms) > 10 and sentiment > 0.6:
+    if len(high_relevance_terms) > 10 and sentiment > 0.55:
         return "high"
     elif len(high_relevance_terms) > 5 and sentiment > 0.4:
         return "medium"
