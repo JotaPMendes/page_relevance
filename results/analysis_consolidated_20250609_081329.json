@@ -1,0 +1,152 @@
+{
+  "analysis_metadata": {
+    "id": "analysis_20250609_081329",
+    "timestamp": "2025-06-09T09:15:11.756595",
+    "total_sites_analyzed": 1
+  },
+  "overall_insights": {
+    "average_sentiment": 0.651,
+    "sentiment_distribution": {
+      "positive": 1,
+      "neutral": 0,
+      "negative": 0
+    }
+  },
+  "category_insights": {
+    "activity_terms": {
+      "total_terms": 2,
+      "unique_terms": 2,
+      "top_terms": [
+        {
+          "term": "turismo",
+          "total_frequency": 75,
+          "total_score": 7.64
+        },
+        {
+          "term": "turismo sustentável",
+          "total_frequency": 11,
+          "total_score": 1.12
+        }
+      ]
+    },
+    "planning_terms": {
+      "total_terms": 49,
+      "unique_terms": 49,
+      "top_terms": [
+        {
+          "term": "porto",
+          "total_frequency": 325,
+          "total_score": 10.0
+        },
+        {
+          "term": "galinhas",
+          "total_frequency": 247,
+          "total_score": 10.0
+        },
+        {
+          "term": "praia",
+          "total_frequency": 170,
+          "total_score": 10.0
+        },
+        {
+          "term": "porto galinhas",
+          "total_frequency": 243,
+          "total_score": 10.0
+        },
+        {
+          "term": "bem",
+          "total_frequency": 96,
+          "total_score": 6.52
+        },
+        {
+          "term": "praias",
+          "total_frequency": 89,
+          "total_score": 6.04
+        },
+        {
+          "term": "obrigado",
+          "total_frequency": 82,
+          "total_score": 5.57
+        },
+        {
+          "term": "lugar",
+          "total_frequency": 80,
+          "total_score": 5.43
+        },
+        {
+          "term": "aqui",
+          "total_frequency": 70,
+          "total_score": 4.75
+        },
+        {
+          "term": "responderolá",
+          "total_frequency": 68,
+          "total_score": 4.62
+        }
+      ]
+    },
+    "general_terms": {
+      "total_terms": 14,
+      "unique_terms": 14,
+      "top_terms": [
+        {
+          "term": "tudo",
+          "total_frequency": 105,
+          "total_score": 7.13
+        },
+        {
+          "term": "vendedores",
+          "total_frequency": 77,
+          "total_score": 5.23
+        },
+        {
+          "term": "comentários",
+          "total_frequency": 58,
+          "total_score": 3.94
+        },
+        {
+          "term": "todos",
+          "total_frequency": 56,
+          "total_score": 3.8
+        },
+        {
+          "term": "turistas",
+          "total_frequency": 52,
+          "total_score": 3.53
+        },
+        {
+          "term": "natureza",
+          "total_frequency": 46,
+          "total_score": 3.12
+        },
+        {
+          "term": "pessoas",
+          "total_frequency": 45,
+          "total_score": 3.05
+        },
+        {
+          "term": "piscinas naturais",
+          "total_frequency": 19,
+          "total_score": 1.29
+        },
+        {
+          "term": "assédio vendedores",
+          "total_frequency": 19,
+          "total_score": 1.29
+        },
+        {
+          "term": "faixa areia",
+          "total_frequency": 11,
+          "total_score": 0.75
+        }
+      ]
+    }
+  },
+  "site_rankings": [
+    {
+      "name": "Viajante Curioso - Porto de Galinhas",
+      "sentiment": 0.6512968299711815,
+      "total_terms": 15
+    }
+  ]
+}

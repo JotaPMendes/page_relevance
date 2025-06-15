@@ -1,0 +1,854 @@
+{
+  "site_info": {
+    "name": "Viaje na Viagem - Quando Ir",
+    "url": "https://www.viajenaviagem.com/destino/porto-de-galinhas/quando-ir/",
+    "content_length": 5292,
+    "relevant_words": 546
+  },
+  "sentiment_analysis": {
+    "overall_sentiment": 0.5,
+    "sentiment_confidence": 0.5,
+    "chunks_analyzed": 14,
+    "method": "transformer"
+  },
+  "top_terms": [
+    {
+      "term": "chuva",
+      "type": "unigram",
+      "frequency": 20,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.742,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "temperatura",
+      "type": "unigram",
+      "frequency": 13,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.579,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "mínima",
+      "type": "unigram",
+      "frequency": 12,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.642,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "máxima",
+      "type": "unigram",
+      "frequency": 12,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.517,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "porto",
+      "type": "unigram",
+      "frequency": 11,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.616,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "galinhas",
+      "type": "unigram",
+      "frequency": 11,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.622,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "lua",
+      "type": "unigram",
+      "frequency": 9,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.734,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "piscinas",
+      "type": "unigram",
+      "frequency": 9,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.671,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "mês",
+      "type": "unigram",
+      "frequency": 7,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.76,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "naturais",
+      "type": "unigram",
+      "frequency": 7,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.642,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "chover",
+      "type": "unigram",
+      "frequency": 7,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.668,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "tempo",
+      "type": "unigram",
+      "frequency": 7,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.593,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "23ºc",
+      "type": "unigram",
+      "frequency": 6,
+      "relevance_score": 10.0,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.539,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "pegar",
+      "type": "unigram",
+      "frequency": 5,
+      "relevance_score": 9.16,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.695,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "sol",
+      "type": "unigram",
+      "frequency": 5,
+      "relevance_score": 9.16,
+      "category": "planning",
+      "detailed_category": "organização de viagens",
+      "classification_confidence": 0.631,
+      "classification_method": "contextual"
+    }
+  ],
+  "categorized_terms": {
+    "destination_terms": [],
+    "timing_terms": [],
+    "activity_terms": [],
+    "price_terms": [],
+    "sentiment_terms": [],
+    "planning_terms": [
+      {
+        "term": "chuva",
+        "type": "unigram",
+        "frequency": 20,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.742,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "temperatura",
+        "type": "unigram",
+        "frequency": 13,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.579,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "mínima",
+        "type": "unigram",
+        "frequency": 12,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.642,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "máxima",
+        "type": "unigram",
+        "frequency": 12,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.517,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "porto",
+        "type": "unigram",
+        "frequency": 11,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.616,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "galinhas",
+        "type": "unigram",
+        "frequency": 11,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.622,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "lua",
+        "type": "unigram",
+        "frequency": 9,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.734,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "piscinas",
+        "type": "unigram",
+        "frequency": 9,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.671,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "mês",
+        "type": "unigram",
+        "frequency": 7,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.76,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "naturais",
+        "type": "unigram",
+        "frequency": 7,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.642,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "chover",
+        "type": "unigram",
+        "frequency": 7,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.668,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "tempo",
+        "type": "unigram",
+        "frequency": 7,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.593,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "23ºc",
+        "type": "unigram",
+        "frequency": 6,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.539,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "pegar",
+        "type": "unigram",
+        "frequency": 5,
+        "relevance_score": 9.16,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.695,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "sol",
+        "type": "unigram",
+        "frequency": 5,
+        "relevance_score": 9.16,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.631,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "passeio",
+        "type": "unigram",
+        "frequency": 5,
+        "relevance_score": 9.16,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.702,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "chuvas",
+        "type": "unigram",
+        "frequency": 5,
+        "relevance_score": 9.16,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.702,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "seco",
+        "type": "unigram",
+        "frequency": 5,
+        "relevance_score": 9.16,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.616,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "setembro",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 7.33,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.551,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "fevereiro",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 7.33,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.594,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "pena",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 7.33,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.735,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "fazer",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 7.33,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.672,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "maré",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 7.33,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.688,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "31ºc",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 7.33,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.537,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "viagem",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 7.33,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.614,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "inverno",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 7.33,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.665,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "viaje",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 7.33,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.665,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "preparado",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 7.33,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.725,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "praiômetro",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 7.33,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.621,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "28ºc",
+        "type": "unigram",
+        "frequency": 4,
+        "relevance_score": 7.33,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.54,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "temperatura mínima",
+        "type": "bigram",
+        "frequency": 12,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.569,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "porto galinhas",
+        "type": "bigram",
+        "frequency": 11,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.662,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "piscinas naturais",
+        "type": "bigram",
+        "frequency": 6,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.716,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "mínima 23ºc",
+        "type": "bigram",
+        "frequency": 6,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.513,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "chuva chuva",
+        "type": "bigram",
+        "frequency": 5,
+        "relevance_score": 9.16,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.658,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "máxima 31ºc",
+        "type": "bigram",
+        "frequency": 4,
+        "relevance_score": 7.33,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.52,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "viaje preparado",
+        "type": "bigram",
+        "frequency": 4,
+        "relevance_score": 7.33,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.654,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "preparado pegar",
+        "type": "bigram",
+        "frequency": 4,
+        "relevance_score": 7.33,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.642,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "pegar chuva",
+        "type": "bigram",
+        "frequency": 4,
+        "relevance_score": 7.33,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.743,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "máxima 28ºc",
+        "type": "bigram",
+        "frequency": 4,
+        "relevance_score": 7.33,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.529,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "tempo seco",
+        "type": "bigram",
+        "frequency": 4,
+        "relevance_score": 7.33,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.577,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "mês mês",
+        "type": "bigram",
+        "frequency": 3,
+        "relevance_score": 5.49,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.687,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "lua nova",
+        "type": "bigram",
+        "frequency": 3,
+        "relevance_score": 5.49,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.784,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "lua cheia",
+        "type": "bigram",
+        "frequency": 3,
+        "relevance_score": 5.49,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.8,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "inverno procure",
+        "type": "bigram",
+        "frequency": 3,
+        "relevance_score": 5.49,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.619,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "procure outro",
+        "type": "bigram",
+        "frequency": 3,
+        "relevance_score": 5.49,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.612,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "outro destino",
+        "type": "bigram",
+        "frequency": 3,
+        "relevance_score": 5.49,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.624,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "destino praiômetro",
+        "type": "bigram",
+        "frequency": 3,
+        "relevance_score": 5.49,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.636,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "mínima 22ºc",
+        "type": "bigram",
+        "frequency": 3,
+        "relevance_score": 5.49,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.515,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "temperatura mínima 23ºc",
+        "type": "trigram",
+        "frequency": 6,
+        "relevance_score": 10.0,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.516,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "23ºc máxima 31ºc",
+        "type": "trigram",
+        "frequency": 4,
+        "relevance_score": 7.33,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.511,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "viaje preparado pegar",
+        "type": "trigram",
+        "frequency": 4,
+        "relevance_score": 7.33,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.662,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "preparado pegar chuva",
+        "type": "trigram",
+        "frequency": 4,
+        "relevance_score": 7.33,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.77,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "pegar chuva chuva",
+        "type": "trigram",
+        "frequency": 4,
+        "relevance_score": 7.33,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.724,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "inverno procure outro",
+        "type": "trigram",
+        "frequency": 3,
+        "relevance_score": 5.49,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.651,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "procure outro destino",
+        "type": "trigram",
+        "frequency": 3,
+        "relevance_score": 5.49,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.619,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "outro destino praiômetro",
+        "type": "trigram",
+        "frequency": 3,
+        "relevance_score": 5.49,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.649,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "temperatura mínima 22ºc",
+        "type": "trigram",
+        "frequency": 3,
+        "relevance_score": 5.49,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.523,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "temperatura mínima 21ºc",
+        "type": "trigram",
+        "frequency": 3,
+        "relevance_score": 5.49,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.515,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "21ºc máxima 28ºc",
+        "type": "trigram",
+        "frequency": 3,
+        "relevance_score": 5.49,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.51,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "fazer passeios piscinas",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 3.66,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.789,
+        "classification_method": "contextual"
+      }
+    ],
+    "accommodation_terms": [],
+    "food_terms": [],
+    "general_terms": [
+      {
+        "term": "23ºc máxima",
+        "type": "bigram",
+        "frequency": 6,
+        "relevance_score": 10.0,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "mínima 23ºc máxima",
+        "type": "trigram",
+        "frequency": 6,
+        "relevance_score": 10.0,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "mínima 22ºc máxima",
+        "type": "trigram",
+        "frequency": 3,
+        "relevance_score": 5.49,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "mínima 21ºc máxima",
+        "type": "trigram",
+        "frequency": 3,
+        "relevance_score": 5.49,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      }
+    ]
+  },
+  "category_summary": {
+    "planning_terms": {
+      "total_terms": 61,
+      "avg_relevance_score": 7.82,
+      "top_terms": [
+        "chuva",
+        "temperatura",
+        "mínima"
+      ]
+    },
+    "general_terms": {
+      "total_terms": 4,
+      "avg_relevance_score": 7.75,
+      "top_terms": [
+        "23ºc máxima",
+        "mínima 23ºc máxima",
+        "mínima 22ºc máxima"
+      ]
+    }
+  },
+  "ai_usage": {
+    "total_terms": 65,
+    "contextual_classifications": 61,
+    "keyword_fallbacks": 4
+  }
+}

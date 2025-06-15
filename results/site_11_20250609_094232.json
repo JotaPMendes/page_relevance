@@ -1,0 +1,872 @@
+{
+  "site_info": {
+    "name": "Viaja Que Passa - Guia de Porto de Galinhas",
+    "url": "https://www.viajaquepassa.com.br/porto-de-galinhas-quando-ir-onde-ficar-e-mais-dicas/?utm_source=chatgpt.com",
+    "content_length": 12064,
+    "relevant_words": 1176
+  },
+  "sentiment_analysis": {
+    "overall_sentiment": 0.5,
+    "sentiment_confidence": 0.5,
+    "chunks_analyzed": 31,
+    "method": "transformer"
+  },
+  "top_terms": [
+    {
+      "term": "porto",
+      "type": "unigram",
+      "frequency": 47,
+      "relevance_score": 10.0,
+      "category": "timing",
+      "detailed_category": "datas e períodos de viagem",
+      "classification_confidence": 0.509,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "galinhas",
+      "type": "unigram",
+      "frequency": 39,
+      "relevance_score": 10.0,
+      "category": "timing",
+      "detailed_category": "datas e períodos de viagem",
+      "classification_confidence": 0.524,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "onde",
+      "type": "unigram",
+      "frequency": 12,
+      "relevance_score": 10.0,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "ficar",
+      "type": "unigram",
+      "frequency": 12,
+      "relevance_score": 10.0,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "fazer",
+      "type": "unigram",
+      "frequency": 12,
+      "relevance_score": 10.0,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "praia",
+      "type": "unigram",
+      "frequency": 12,
+      "relevance_score": 10.0,
+      "category": "timing",
+      "detailed_category": "datas e períodos de viagem",
+      "classification_confidence": 0.555,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "viagem",
+      "type": "unigram",
+      "frequency": 10,
+      "relevance_score": 10.0,
+      "category": "timing",
+      "detailed_category": "datas e períodos de viagem",
+      "classification_confidence": 0.54,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "opções",
+      "type": "unigram",
+      "frequency": 10,
+      "relevance_score": 8.5,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "centro",
+      "type": "unigram",
+      "frequency": 9,
+      "relevance_score": 10.0,
+      "category": "timing",
+      "detailed_category": "datas e períodos de viagem",
+      "classification_confidence": 0.584,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "carro",
+      "type": "unigram",
+      "frequency": 9,
+      "relevance_score": 10.0,
+      "category": "timing",
+      "detailed_category": "datas e períodos de viagem",
+      "classification_confidence": 0.538,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "dicas",
+      "type": "unigram",
+      "frequency": 8,
+      "relevance_score": 6.8,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "possui",
+      "type": "unigram",
+      "frequency": 8,
+      "relevance_score": 10.0,
+      "category": "timing",
+      "detailed_category": "datas e períodos de viagem",
+      "classification_confidence": 0.538,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "possível",
+      "type": "unigram",
+      "frequency": 8,
+      "relevance_score": 10.0,
+      "category": "timing",
+      "detailed_category": "datas e períodos de viagem",
+      "classification_confidence": 0.561,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "tempo",
+      "type": "unigram",
+      "frequency": 8,
+      "relevance_score": 10.0,
+      "category": "timing",
+      "detailed_category": "datas e períodos de viagem",
+      "classification_confidence": 0.504,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "recife",
+      "type": "unigram",
+      "frequency": 8,
+      "relevance_score": 10.0,
+      "category": "destination",
+      "detailed_category": "destination",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    }
+  ],
+  "categorized_terms": {
+    "destination_terms": [
+      {
+        "term": "recife",
+        "type": "unigram",
+        "frequency": 8,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "porto galinhas",
+        "type": "bigram",
+        "frequency": 39,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "ficar porto",
+        "type": "bigram",
+        "frequency": 5,
+        "relevance_score": 8.5,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "fica porto",
+        "type": "bigram",
+        "frequency": 3,
+        "relevance_score": 5.1,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "início brasil",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 3.4,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "fazer porto galinhas",
+        "type": "trigram",
+        "frequency": 5,
+        "relevance_score": 8.5,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "porto galinhas onde",
+        "type": "trigram",
+        "frequency": 3,
+        "relevance_score": 5.1,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "onde fica porto",
+        "type": "trigram",
+        "frequency": 3,
+        "relevance_score": 5.1,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "porto galinhas foto",
+        "type": "trigram",
+        "frequency": 3,
+        "relevance_score": 5.1,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "ficar porto galinhas",
+        "type": "trigram",
+        "frequency": 3,
+        "relevance_score": 5.1,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "galinhas onde ficar",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 3.4,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "tempo ficar porto",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 3.4,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "fica porto galinhas",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 3.4,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "porto galinhas porto",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 3.4,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      }
+    ],
+    "timing_terms": [
+      {
+        "term": "porto",
+        "type": "unigram",
+        "frequency": 47,
+        "relevance_score": 10.0,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.509,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "galinhas",
+        "type": "unigram",
+        "frequency": 39,
+        "relevance_score": 10.0,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.524,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "praia",
+        "type": "unigram",
+        "frequency": 12,
+        "relevance_score": 10.0,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.555,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "viagem",
+        "type": "unigram",
+        "frequency": 10,
+        "relevance_score": 10.0,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.54,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "centro",
+        "type": "unigram",
+        "frequency": 9,
+        "relevance_score": 10.0,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.584,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "carro",
+        "type": "unigram",
+        "frequency": 9,
+        "relevance_score": 10.0,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.538,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "possui",
+        "type": "unigram",
+        "frequency": 8,
+        "relevance_score": 10.0,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.538,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "possível",
+        "type": "unigram",
+        "frequency": 8,
+        "relevance_score": 10.0,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.561,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "tempo",
+        "type": "unigram",
+        "frequency": 8,
+        "relevance_score": 10.0,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.504,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "local",
+        "type": "unigram",
+        "frequency": 7,
+        "relevance_score": 10.0,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.564,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "melhor",
+        "type": "unigram",
+        "frequency": 7,
+        "relevance_score": 10.0,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.508,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "passeio",
+        "type": "unigram",
+        "frequency": 7,
+        "relevance_score": 10.0,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.565,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "conhecer",
+        "type": "unigram",
+        "frequency": 7,
+        "relevance_score": 10.0,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.559,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "praias",
+        "type": "unigram",
+        "frequency": 6,
+        "relevance_score": 9.18,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.508,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "piscinas",
+        "type": "unigram",
+        "frequency": 6,
+        "relevance_score": 9.18,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.571,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "ônibus",
+        "type": "unigram",
+        "frequency": 6,
+        "relevance_score": 9.18,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.516,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "resort",
+        "type": "unigram",
+        "frequency": 6,
+        "relevance_score": 9.18,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.547,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "pousada",
+        "type": "unigram",
+        "frequency": 6,
+        "relevance_score": 9.18,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.534,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "lugar",
+        "type": "unigram",
+        "frequency": 5,
+        "relevance_score": 7.65,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.552,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "fazer porto",
+        "type": "bigram",
+        "frequency": 6,
+        "relevance_score": 9.18,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.529,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "vale pena",
+        "type": "bigram",
+        "frequency": 5,
+        "relevance_score": 7.65,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.525,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "galinhas onde",
+        "type": "bigram",
+        "frequency": 3,
+        "relevance_score": 4.59,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.518,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "piscinas naturais",
+        "type": "bigram",
+        "frequency": 3,
+        "relevance_score": 4.59,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.584,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "alta temporada",
+        "type": "bigram",
+        "frequency": 3,
+        "relevance_score": 4.59,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.641,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "galinhas foto",
+        "type": "bigram",
+        "frequency": 3,
+        "relevance_score": 4.59,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.549,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "praia muro",
+        "type": "bigram",
+        "frequency": 3,
+        "relevance_score": 4.59,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.572,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "muro alto",
+        "type": "bigram",
+        "frequency": 3,
+        "relevance_score": 4.59,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.571,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "chegar onde",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 3.06,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.53,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "chegar porto",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 3.06,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.53,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "tempo ficar",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 3.06,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.519,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "feira artesanatos",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 3.06,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.553,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "artesanatos centro",
+        "type": "bigram",
+        "frequency": 2,
+        "relevance_score": 3.06,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.595,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "praia muro alto",
+        "type": "trigram",
+        "frequency": 3,
+        "relevance_score": 4.59,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.518,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "feira artesanatos centro",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 3.06,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.543,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "galinhas porto galinhas",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 3.06,
+        "category": "timing",
+        "detailed_category": "datas e períodos de viagem",
+        "classification_confidence": 0.527,
+        "classification_method": "contextual"
+      }
+    ],
+    "activity_terms": [],
+    "price_terms": [],
+    "sentiment_terms": [],
+    "planning_terms": [
+      {
+        "term": "onde ficar dicas",
+        "type": "trigram",
+        "frequency": 3,
+        "relevance_score": 2.55,
+        "category": "planning",
+        "detailed_category": "organização de viagens",
+        "classification_confidence": 0.563,
+        "classification_method": "contextual"
+      }
+    ],
+    "accommodation_terms": [],
+    "food_terms": [],
+    "general_terms": [
+      {
+        "term": "onde",
+        "type": "unigram",
+        "frequency": 12,
+        "relevance_score": 10.0,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "ficar",
+        "type": "unigram",
+        "frequency": 12,
+        "relevance_score": 10.0,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "fazer",
+        "type": "unigram",
+        "frequency": 12,
+        "relevance_score": 10.0,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "opções",
+        "type": "unigram",
+        "frequency": 10,
+        "relevance_score": 8.5,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "dicas",
+        "type": "unigram",
+        "frequency": 8,
+        "relevance_score": 6.8,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "fica",
+        "type": "unigram",
+        "frequency": 7,
+        "relevance_score": 5.95,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "opção",
+        "type": "unigram",
+        "frequency": 7,
+        "relevance_score": 5.95,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "chegar",
+        "type": "unigram",
+        "frequency": 6,
+        "relevance_score": 5.1,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "via",
+        "type": "unigram",
+        "frequency": 6,
+        "relevance_score": 5.1,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "meses",
+        "type": "unigram",
+        "frequency": 5,
+        "relevance_score": 4.25,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "onde ficar",
+        "type": "bigram",
+        "frequency": 6,
+        "relevance_score": 5.1,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "ficar dicas",
+        "type": "bigram",
+        "frequency": 4,
+        "relevance_score": 3.4,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "onde fica",
+        "type": "bigram",
+        "frequency": 3,
+        "relevance_score": 2.55,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "chegar onde ficar",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 1.7,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "outros destinos litoral",
+        "type": "trigram",
+        "frequency": 2,
+        "relevance_score": 1.7,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      }
+    ]
+  },
+  "category_summary": {
+    "destination_terms": {
+      "total_terms": 14,
+      "avg_relevance_score": 5.68,
+      "top_terms": [
+        "recife",
+        "porto galinhas",
+        "ficar porto"
+      ]
+    },
+    "timing_terms": {
+      "total_terms": 35,
+      "avg_relevance_score": 7.26,
+      "top_terms": [
+        "porto",
+        "galinhas",
+        "praia"
+      ]
+    },
+    "planning_terms": {
+      "total_terms": 1,
+      "avg_relevance_score": 2.55,
+      "top_terms": [
+        "onde ficar dicas"
+      ]
+    },
+    "general_terms": {
+      "total_terms": 15,
+      "avg_relevance_score": 5.74,
+      "top_terms": [
+        "onde",
+        "ficar",
+        "fazer"
+      ]
+    }
+  },
+  "ai_usage": {
+    "total_terms": 65,
+    "contextual_classifications": 36,
+    "keyword_fallbacks": 29
+  }
+}

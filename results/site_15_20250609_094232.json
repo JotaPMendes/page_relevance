@@ -1,0 +1,884 @@
+{
+  "site_info": {
+    "name": "Melhores Destinos - Onde Ficar",
+    "url": "https://guia.melhoresdestinos.com.br/onde-ficar-em-porto-de-galinhas.html",
+    "content_length": 11898,
+    "relevant_words": 1223
+  },
+  "sentiment_analysis": {
+    "overall_sentiment": 0.49,
+    "sentiment_confidence": 0.49,
+    "chunks_analyzed": 30,
+    "method": "transformer"
+  },
+  "top_terms": [
+    {
+      "term": "porto",
+      "type": "unigram",
+      "frequency": 62,
+      "relevance_score": 10.0,
+      "category": "destination",
+      "detailed_category": "destination",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "galinhas",
+      "type": "unigram",
+      "frequency": 58,
+      "relevance_score": 10.0,
+      "category": "destination",
+      "detailed_category": "destination",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "ver",
+      "type": "unigram",
+      "frequency": 44,
+      "relevance_score": 10.0,
+      "category": "accommodation",
+      "detailed_category": "hotéis e onde ficar",
+      "classification_confidence": 0.531,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "preços",
+      "type": "unigram",
+      "frequency": 43,
+      "relevance_score": 10.0,
+      "category": "price",
+      "detailed_category": "price",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "pousada",
+      "type": "unigram",
+      "frequency": 35,
+      "relevance_score": 10.0,
+      "category": "activity",
+      "detailed_category": "activity",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "resort",
+      "type": "unigram",
+      "frequency": 27,
+      "relevance_score": 10.0,
+      "category": "accommodation",
+      "detailed_category": "hotéis e onde ficar",
+      "classification_confidence": 0.533,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "nota",
+      "type": "unigram",
+      "frequency": 24,
+      "relevance_score": 10.0,
+      "category": "accommodation",
+      "detailed_category": "hotéis e onde ficar",
+      "classification_confidence": 0.525,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "avaliações",
+      "type": "unigram",
+      "frequency": 23,
+      "relevance_score": 10.0,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "praia",
+      "type": "unigram",
+      "frequency": 21,
+      "relevance_score": 10.0,
+      "category": "accommodation",
+      "detailed_category": "hotéis e onde ficar",
+      "classification_confidence": 0.571,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "hotel",
+      "type": "unigram",
+      "frequency": 20,
+      "relevance_score": 10.0,
+      "category": "accommodation",
+      "detailed_category": "hotéis e onde ficar",
+      "classification_confidence": 0.545,
+      "classification_method": "contextual"
+    },
+    {
+      "term": "oferece",
+      "type": "unigram",
+      "frequency": 16,
+      "relevance_score": 10.0,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "mar",
+      "type": "unigram",
+      "frequency": 14,
+      "relevance_score": 10.0,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "onde",
+      "type": "unigram",
+      "frequency": 13,
+      "relevance_score": 10.0,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "piscina",
+      "type": "unigram",
+      "frequency": 12,
+      "relevance_score": 9.81,
+      "category": "general",
+      "detailed_category": "general",
+      "classification_confidence": 0.7,
+      "classification_method": "keyword"
+    },
+    {
+      "term": "livre",
+      "type": "unigram",
+      "frequency": 12,
+      "relevance_score": 10.0,
+      "category": "accommodation",
+      "detailed_category": "hotéis e onde ficar",
+      "classification_confidence": 0.511,
+      "classification_method": "contextual"
+    }
+  ],
+  "categorized_terms": {
+    "destination_terms": [
+      {
+        "term": "porto",
+        "type": "unigram",
+        "frequency": 62,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "galinhas",
+        "type": "unigram",
+        "frequency": 58,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "porto galinhas",
+        "type": "bigram",
+        "frequency": 57,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "ficar porto",
+        "type": "bigram",
+        "frequency": 7,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "praia porto",
+        "type": "bigram",
+        "frequency": 7,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "galinhas all",
+        "type": "bigram",
+        "frequency": 4,
+        "relevance_score": 6.54,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "pérola porto",
+        "type": "bigram",
+        "frequency": 4,
+        "relevance_score": 6.54,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "mar porto",
+        "type": "bigram",
+        "frequency": 4,
+        "relevance_score": 6.54,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "onde ficar porto",
+        "type": "trigram",
+        "frequency": 7,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "ficar porto galinhas",
+        "type": "trigram",
+        "frequency": 7,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "praia porto galinhas",
+        "type": "trigram",
+        "frequency": 7,
+        "relevance_score": 10.0,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "porto galinhas all",
+        "type": "trigram",
+        "frequency": 4,
+        "relevance_score": 6.54,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "galinhas all inclusive",
+        "type": "trigram",
+        "frequency": 4,
+        "relevance_score": 6.54,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "beira mar porto",
+        "type": "trigram",
+        "frequency": 4,
+        "relevance_score": 6.54,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "mar porto galinhas",
+        "type": "trigram",
+        "frequency": 4,
+        "relevance_score": 6.54,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "hotéis porto galinhas",
+        "type": "trigram",
+        "frequency": 3,
+        "relevance_score": 4.91,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "westin porto galinhas",
+        "type": "trigram",
+        "frequency": 3,
+        "relevance_score": 4.91,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "vivá porto galinhas",
+        "type": "trigram",
+        "frequency": 3,
+        "relevance_score": 4.91,
+        "category": "destination",
+        "detailed_category": "destination",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      }
+    ],
+    "timing_terms": [],
+    "activity_terms": [
+      {
+        "term": "pousada",
+        "type": "unigram",
+        "frequency": 35,
+        "relevance_score": 10.0,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "preços pousada",
+        "type": "bigram",
+        "frequency": 18,
+        "relevance_score": 10.0,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "preços hotel",
+        "type": "bigram",
+        "frequency": 4,
+        "relevance_score": 4.91,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "hotel village",
+        "type": "bigram",
+        "frequency": 4,
+        "relevance_score": 4.91,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "pousada unaí",
+        "type": "bigram",
+        "frequency": 4,
+        "relevance_score": 4.91,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "ver preços pousada",
+        "type": "trigram",
+        "frequency": 18,
+        "relevance_score": 10.0,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "ver preços hotel",
+        "type": "trigram",
+        "frequency": 4,
+        "relevance_score": 4.91,
+        "category": "activity",
+        "detailed_category": "activity",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      }
+    ],
+    "price_terms": [
+      {
+        "term": "preços",
+        "type": "unigram",
+        "frequency": 43,
+        "relevance_score": 10.0,
+        "category": "price",
+        "detailed_category": "price",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "ver preços",
+        "type": "bigram",
+        "frequency": 43,
+        "relevance_score": 10.0,
+        "category": "price",
+        "detailed_category": "price",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "inclusive ver preços",
+        "type": "trigram",
+        "frequency": 3,
+        "relevance_score": 4.17,
+        "category": "price",
+        "detailed_category": "price",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      }
+    ],
+    "sentiment_terms": [],
+    "planning_terms": [],
+    "accommodation_terms": [
+      {
+        "term": "ver",
+        "type": "unigram",
+        "frequency": 44,
+        "relevance_score": 10.0,
+        "category": "accommodation",
+        "detailed_category": "hotéis e onde ficar",
+        "classification_confidence": 0.531,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "resort",
+        "type": "unigram",
+        "frequency": 27,
+        "relevance_score": 10.0,
+        "category": "accommodation",
+        "detailed_category": "hotéis e onde ficar",
+        "classification_confidence": 0.533,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "nota",
+        "type": "unigram",
+        "frequency": 24,
+        "relevance_score": 10.0,
+        "category": "accommodation",
+        "detailed_category": "hotéis e onde ficar",
+        "classification_confidence": 0.525,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "praia",
+        "type": "unigram",
+        "frequency": 21,
+        "relevance_score": 10.0,
+        "category": "accommodation",
+        "detailed_category": "hotéis e onde ficar",
+        "classification_confidence": 0.571,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "hotel",
+        "type": "unigram",
+        "frequency": 20,
+        "relevance_score": 10.0,
+        "category": "accommodation",
+        "detailed_category": "hotéis e onde ficar",
+        "classification_confidence": 0.545,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "livre",
+        "type": "unigram",
+        "frequency": 12,
+        "relevance_score": 10.0,
+        "category": "accommodation",
+        "detailed_category": "hotéis e onde ficar",
+        "classification_confidence": 0.511,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "ficar",
+        "type": "unigram",
+        "frequency": 11,
+        "relevance_score": 10.0,
+        "category": "accommodation",
+        "detailed_category": "hotéis e onde ficar",
+        "classification_confidence": 0.515,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "hotéis",
+        "type": "unigram",
+        "frequency": 9,
+        "relevance_score": 10.0,
+        "category": "accommodation",
+        "detailed_category": "hotéis e onde ficar",
+        "classification_confidence": 0.533,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "gratuito",
+        "type": "unigram",
+        "frequency": 9,
+        "relevance_score": 10.0,
+        "category": "accommodation",
+        "detailed_category": "hotéis e onde ficar",
+        "classification_confidence": 0.522,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "propriedade",
+        "type": "unigram",
+        "frequency": 9,
+        "relevance_score": 10.0,
+        "category": "accommodation",
+        "detailed_category": "hotéis e onde ficar",
+        "classification_confidence": 0.506,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "all",
+        "type": "unigram",
+        "frequency": 8,
+        "relevance_score": 10.0,
+        "category": "accommodation",
+        "detailed_category": "hotéis e onde ficar",
+        "classification_confidence": 0.503,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "inclusive",
+        "type": "unigram",
+        "frequency": 8,
+        "relevance_score": 10.0,
+        "category": "accommodation",
+        "detailed_category": "hotéis e onde ficar",
+        "classification_confidence": 0.546,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "beira",
+        "type": "unigram",
+        "frequency": 8,
+        "relevance_score": 10.0,
+        "category": "accommodation",
+        "detailed_category": "hotéis e onde ficar",
+        "classification_confidence": 0.505,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "beach",
+        "type": "unigram",
+        "frequency": 7,
+        "relevance_score": 9.16,
+        "category": "accommodation",
+        "detailed_category": "hotéis e onde ficar",
+        "classification_confidence": 0.511,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "fica",
+        "type": "unigram",
+        "frequency": 7,
+        "relevance_score": 9.16,
+        "category": "accommodation",
+        "detailed_category": "hotéis e onde ficar",
+        "classification_confidence": 0.524,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "localizado",
+        "type": "unigram",
+        "frequency": 7,
+        "relevance_score": 9.16,
+        "category": "accommodation",
+        "detailed_category": "hotéis e onde ficar",
+        "classification_confidence": 0.51,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "onde ficar",
+        "type": "bigram",
+        "frequency": 10,
+        "relevance_score": 10.0,
+        "category": "accommodation",
+        "detailed_category": "hotéis e onde ficar",
+        "classification_confidence": 0.5,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "all inclusive",
+        "type": "bigram",
+        "frequency": 8,
+        "relevance_score": 10.0,
+        "category": "accommodation",
+        "detailed_category": "hotéis e onde ficar",
+        "classification_confidence": 0.53,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "beach resort",
+        "type": "bigram",
+        "frequency": 4,
+        "relevance_score": 5.23,
+        "category": "accommodation",
+        "detailed_category": "hotéis e onde ficar",
+        "classification_confidence": 0.52,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "inclusive nota",
+        "type": "bigram",
+        "frequency": 4,
+        "relevance_score": 5.23,
+        "category": "accommodation",
+        "detailed_category": "hotéis e onde ficar",
+        "classification_confidence": 0.542,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "piscinas naturais",
+        "type": "bigram",
+        "frequency": 4,
+        "relevance_score": 5.23,
+        "category": "accommodation",
+        "detailed_category": "hotéis e onde ficar",
+        "classification_confidence": 0.511,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "all inclusive nota",
+        "type": "trigram",
+        "frequency": 4,
+        "relevance_score": 5.23,
+        "category": "accommodation",
+        "detailed_category": "hotéis e onde ficar",
+        "classification_confidence": 0.532,
+        "classification_method": "contextual"
+      },
+      {
+        "term": "all inclusive ver",
+        "type": "trigram",
+        "frequency": 3,
+        "relevance_score": 3.92,
+        "category": "accommodation",
+        "detailed_category": "hotéis e onde ficar",
+        "classification_confidence": 0.534,
+        "classification_method": "contextual"
+      }
+    ],
+    "food_terms": [],
+    "general_terms": [
+      {
+        "term": "avaliações",
+        "type": "unigram",
+        "frequency": 23,
+        "relevance_score": 10.0,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "oferece",
+        "type": "unigram",
+        "frequency": 16,
+        "relevance_score": 10.0,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "mar",
+        "type": "unigram",
+        "frequency": 14,
+        "relevance_score": 10.0,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "onde",
+        "type": "unigram",
+        "frequency": 13,
+        "relevance_score": 10.0,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "piscina",
+        "type": "unigram",
+        "frequency": 12,
+        "relevance_score": 9.81,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "piscinas",
+        "type": "unigram",
+        "frequency": 10,
+        "relevance_score": 8.18,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "quartos",
+        "type": "unigram",
+        "frequency": 10,
+        "relevance_score": 8.18,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "atividades",
+        "type": "unigram",
+        "frequency": 8,
+        "relevance_score": 6.54,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "dispõe",
+        "type": "unigram",
+        "frequency": 8,
+        "relevance_score": 6.54,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "localização",
+        "type": "unigram",
+        "frequency": 7,
+        "relevance_score": 5.72,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "piscina livre",
+        "type": "bigram",
+        "frequency": 8,
+        "relevance_score": 6.54,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "beira mar",
+        "type": "bigram",
+        "frequency": 7,
+        "relevance_score": 5.72,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "muro alto",
+        "type": "bigram",
+        "frequency": 5,
+        "relevance_score": 4.09,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      },
+      {
+        "term": "avaliações localizado",
+        "type": "bigram",
+        "frequency": 5,
+        "relevance_score": 4.09,
+        "category": "general",
+        "detailed_category": "general",
+        "classification_confidence": 0.7,
+        "classification_method": "keyword"
+      }
+    ]
+  },
+  "category_summary": {
+    "destination_terms": {
+      "total_terms": 18,
+      "avg_relevance_score": 7.81,
+      "top_terms": [
+        "porto",
+        "galinhas",
+        "porto galinhas"
+      ]
+    },
+    "activity_terms": {
+      "total_terms": 7,
+      "avg_relevance_score": 7.09,
+      "top_terms": [
+        "pousada",
+        "preços pousada",
+        "ver preços pousada"
+      ]
+    },
+    "price_terms": {
+      "total_terms": 3,
+      "avg_relevance_score": 8.06,
+      "top_terms": [
+        "preços",
+        "ver preços",
+        "inclusive ver preços"
+      ]
+    },
+    "accommodation_terms": {
+      "total_terms": 23,
+      "avg_relevance_score": 8.8,
+      "top_terms": [
+        "ver",
+        "resort",
+        "nota"
+      ]
+    },
+    "general_terms": {
+      "total_terms": 14,
+      "avg_relevance_score": 7.53,
+      "top_terms": [
+        "avaliações",
+        "oferece",
+        "mar"
+      ]
+    }
+  },
+  "ai_usage": {
+    "total_terms": 65,
+    "contextual_classifications": 23,
+    "keyword_fallbacks": 42
+  }
+}
