@@ -1,0 +1,35 @@
+# Byte-compiled / cache / temp files
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+*.pdb
+*.egg-info/
+
+# Jupyter and notebook checkpoints
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+# Environment
+.env
+.venv/
+
+# Data and results
+results/
+tmp/
+*.csv
+*.json
+*.xlsx
+*.db
+*.sqlite3
+*.log
+
+# System
+.DS_Store
+Thumbs.db
+
+# Others
+.cache/
