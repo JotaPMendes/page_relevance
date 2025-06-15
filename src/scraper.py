@@ -148,7 +148,8 @@ class WebScraper:
                 'name': site_name,
                 'url': url,
                 'content_length': len(content),
-                'relevant_words': total_words
+                'relevant_words': total_words,
+                'content': original_text  # Adiciona o texto do site para análise de sentimento contextual
             },
             'sentiment_analysis': sentiment_result,
             'top_terms': all_terms[:15],  # Top 15 termos
